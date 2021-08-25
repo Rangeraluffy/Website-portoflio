@@ -19,9 +19,15 @@ export default function Intro() {
   useEffect(() => {
     init(textRef2.current, {
       showCursor: true,
+<<<<<<< HEAD
       backDelay: 3000,
       backSpeed:300,
       strings: ["EPFL", "Lausanne"],
+=======
+      backDelay: 1500,
+      backSpeed:60,
+      strings: ["École", "Polytechnique", "Fédérale", "De Lausanne"],
+>>>>>>> 4d0cdf69dce43f88bc6050f78c092c081109498d
     });
   }, []);
 
