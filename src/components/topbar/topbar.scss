@@ -3,7 +3,7 @@
 .topbar {
   width: 100%;
   height: 70px;
-  background-color: white;
+  background-color: $mainColor;
   color: $mainColor;
   position: fixed;
   top: 0;
@@ -26,12 +26,29 @@
         text-decoration: none;
         color: inherit;
         margin-right: 40px;
+        color: $whiteColor;
+
+        a{
+            color: #fff;
+            font-size: 35px;
+            font-weight: 600;
+        }
+
+        span{
+            color: $secondColor;
+            transition: all 0.3s ease;
+        }
       }
 
       .itemContainer {
         display: flex;
         align-items: center;
         margin-left: 30px;
+        color: $whiteColor;
+
+        @include mobile{
+          display: none;
+        }
 
         .icon {
           font-size: 18px;
@@ -58,7 +75,7 @@
       span {
         width: 100%;
         height: 3px;
-        background-color: $mainColor;
+        background-color: $secondColor;
         transform-origin: left;
         transition: all 2s ease;
       }
@@ -66,7 +83,7 @@
   }
 
   &.active {
-    background-color: $mainColor;
+    background-color: $secondColor;
     color: white;
 
     .hamburger {
