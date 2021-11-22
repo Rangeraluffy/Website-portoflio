@@ -1,7 +1,8 @@
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
 import About from "./components/about/About";
-import PortfolioList from "./components/portfolioList/PortfolioList";
+import Portfolio from "./components/portfolio/Portfolio";
+// import PortfolioList from "./components/portfolioList/PortfolioList";
 import Works from "./components/works/Works";
 import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
@@ -19,7 +20,7 @@ function App() {
       <div className="sections">
         <Intro/>
         <About/>
-        <PortfolioList/>
+        <Portfolio/>
         <Works/>
         <Testimonials/>
         <Contact/>
