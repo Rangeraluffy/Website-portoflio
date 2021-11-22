@@ -1,28 +1,34 @@
-
+import PortfolioList from "../portfolioList/PortfolioList"
 import "./portfolio.scss"
 
 export default function Portfolio() {
 
-  // const list = [
-  //   {
-  //     id: "personal",
-  //     title: "Gravizen"
-  //   },
-  //   {
-  //     id: "School",
-  //     title: "Ruby On Rails"
-  //   },
-  //   {
-  //     id: "personal",
-  //     title: "React"
-  //   },
-  // ];
+  const list = [
+    {
+      id: "all",
+      title: "All"
+    },
+    {
+      id: "school",
+      title: "School Project"
+    },
+    {
+      id: "personal",
+      title: "Personnal Project"
+    },
+    {
+      id: "web",
+      title: "Web application"
+    },
+  ];
 
   return (
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
       <ul>
-        <li>All</li>
+        {list.map((item) =>(
+        <PortfolioList title={item.title}/>
+        ))}
       </ul>
         <div className="container">
           <div className="item">
