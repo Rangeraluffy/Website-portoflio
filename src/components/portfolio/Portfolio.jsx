@@ -1,18 +1,43 @@
+
 import "./portfolio.scss"
 
-const Portfolio = ({img,link}) => {
-  return (
-    <div className="p">
-      <div className="p-browser">
-        <div className="p-circle"></div>
-        <div className="p-circle"></div>
-        <div className="p-circle"></div>
-      </div>
-      <a href={link} target="_blank" rel="noreferrer">
-        <img src={img} alt="" className="p-img" />
-      </a>
-    </div>
-  )
-}
+export default function Portfolio() {
 
-export default Portfolio
+  // const list = [
+  //   {
+  //     id: "personal",
+  //     title: "Gravizen"
+  //   },
+  //   {
+  //     id: "School",
+  //     title: "Ruby On Rails"
+  //   },
+  //   {
+  //     id: "personal",
+  //     title: "React"
+  //   },
+  // ];
+
+  return (
+    <div className="portfolio" id="portfolio">
+      <h1>Portfolio</h1>
+      <ul>
+        <li>All</li>
+      </ul>
+        <div className="container">
+          <div className="item">
+            <img src="assets/project.webp" alt=""/>
+            <h3>Web application</h3>
+          </div>
+          <div className="item">
+            <img src="assets/project2.webp" alt=""/>
+              <h3>Personnal Application</h3>
+          </div>
+          <div className="item">
+            <img src="assets/project3.webp" alt=""/>
+              <h3>School Project</h3>
+          </div>
+        </div>
+    </div>
+)
+}
