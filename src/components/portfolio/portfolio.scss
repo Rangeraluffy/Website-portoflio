@@ -17,18 +17,6 @@
     display: flex;
   }
 
-  li{
-    font-size: 18px;
-    margin-right: 50px;
-    border-radius: 10px;
-    padding: 7px;
-    cursor: pointer;
-    color: black;
-
-    &.active{
-      background-color: $whiteColor;
-    }
-  }
   .container{
     width: 100%;
     display: flex;
