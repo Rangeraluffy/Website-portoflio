@@ -31,7 +31,9 @@ export default function Portfolio() {
         <PortfolioList
           title={item.title}
           active={selected === item.id}
-          setSelected={setSelected}/>
+          setSelected={setSelected}
+          id={item.id}
+          />
         ))}
       </ul>
         <div className="container">
