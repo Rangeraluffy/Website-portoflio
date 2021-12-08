@@ -4,6 +4,13 @@ $whiteColor: black;
 
 $width: 768px;
 
+
+//  Education
+$margin: 20px;
+$spacing: 20px;
+$content-width: calc(40vw - 84px);
+$bdrs: 6px;
+
 @mixin mobile {
     @media (max-width: #{$width}){
         @content

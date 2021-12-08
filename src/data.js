@@ -14,6 +14,11 @@ export const allPortfolio = [
     title: "Third Web Site",
     img: "assets/project3.webp",
   },
+  {
+    id: 4,
+    title: "Third Web Site",
+    img: "assets/project3.webp",
+  },
 ];
 
 export const schoolPortfolio = [
