@@ -1,49 +1,176 @@
 import { useState } from "react";
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faCss3, faPhp, faJs, faHtml5, faReact, faNode, faWordpress, faGitlab} from '@fortawesome/free-brands-svg-icons';
+import { faStar as faStarRegular, faGem} from '@fortawesome/free-regular-svg-icons';
+import { faStar, faStarHalfAlt} from '@fortawesome/free-solid-svg-icons';
+
 import "./works.scss"
+
+library.add(
+    faStarRegular
+);
 
 export default function Works() {
    const alignCenter = { display: 'flex', alignItems: 'center' }
   return (
-    <div id="skills">
-      <div className="background" />
-      <Parallax pages={9}>
-        <ParallaxLayer offset={0} speed={0.5} style={{ ...alignCenter, justifyContent: 'center' }}>
-          <img className="scrollText" src="assets/down.png" alt="" />
-        </ParallaxLayer>
-
-        <ParallaxLayer sticky={{ start: 1, end: 8 }} style={{ ...alignCenter, justifyContent: 'flex-start' }}>
-            <img className="sticky left-img" src="assets/personnal_skills.png" alt=""/>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={1.5} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end'}}>
-            <img className="card parallax" src="assets/html.png" alt=""/>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={2.5} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
-          <img className="card parallax" src="assets/javascript.png" alt=""/>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={3.5} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
-          <img className="card parallax" src="assets/ruby.png" alt=""/>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={4.5} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
-          <img className="card parallax" src="assets/php.png" alt=""/>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={5.5} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
-          <img className="card parallax" src="assets/react.png" alt=""/>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={6.5} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
-          <img className="card parallax" src="assets/wordpress.png" alt=""/>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={7.5} speed={1.5} style={{ ...alignCenter, justifyContent: 'flex-end' }}>
-          <img className="card parallax" src="assets/editeurs.png" alt=""/>
-        </ParallaxLayer>
-      </Parallax>
+    <div className="skills" id="skills">
+      <h1>Skills</h1>
+        <div className="section">
+          <div className="container">
+            <div className="wall">
+              <div className="v-boxes">
+                <div className="box">
+                  <span className="tooltip">CSS</span>
+                  <div className="box-face">
+                    <div className="box-text"><FontAwesomeIcon icon={faCss3}></FontAwesomeIcon></div>
+                  </div>
+                  <div className="box-back">
+                    <div className="box-text">
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={['far', 'star']}></FontAwesomeIcon>
+                    </div>
+                  </div>
+                </div>
+                <div className="box">
+                  <span className="tooltip">JavaScript</span>
+                  <div className="box-face">
+                    <div className="box-text"><FontAwesomeIcon icon={faJs}></FontAwesomeIcon></div>
+                  </div>
+                  <div className="box-back">
+                    <div className="box-text">
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStarHalfAlt}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={['far', 'star']}></FontAwesomeIcon>
+                    </div>
+                  </div>
+                </div>
+                <div className="box">
+                  <span className="tooltip">Node JS</span>
+                  <div className="box-face">
+                    <div className="box-text"><FontAwesomeIcon icon={faNode}></FontAwesomeIcon></div>
+                  </div>
+                  <div className="box-back">
+                    <div className="box-text">
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={['far', 'star']}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={['far', 'star']}></FontAwesomeIcon>
+                    </div>
+                  </div>
+                </div>
+                <div className="box">
+                  <span className="tooltip">WordPress</span>
+                  <div className="box-face">
+                    <div className="box-text"><FontAwesomeIcon icon={faWordpress}></FontAwesomeIcon></div>
+                  </div>
+                  <div className="box-back">
+                    <div className="box-text">
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={['far', 'star']}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={['far', 'star']}></FontAwesomeIcon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="v-boxes second">
+                <div className="box">
+                  <span className="tooltip">HTML</span>
+                  <div className="box-face">
+                    <div className="box-text"><FontAwesomeIcon icon={faHtml5}></FontAwesomeIcon></div>
+                  </div>
+                  <div className="box-back">
+                    <div className="box-text">
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStarHalfAlt}></FontAwesomeIcon>
+                    </div>
+                  </div>
+                </div>
+                <div className="box">
+                  <span className="tooltip">PHP</span>
+                  <div className="box-face">
+                    <div className="box-text"><FontAwesomeIcon icon={faPhp}></FontAwesomeIcon></div>
+                  </div>
+                  <div className="box-back">
+                    <div className="box-text">
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={['far', 'star']}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={['far', 'star']}></FontAwesomeIcon>
+                    </div>
+                  </div>
+                </div>
+                <div className="box">
+                  <span className="tooltip">GitLab</span>
+                  <div className="box-face">
+                    <div className="box-text"><FontAwesomeIcon icon={faGitlab}></FontAwesomeIcon></div>
+                  </div>
+                  <div className="box-back">
+                    <div className="box-text">
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStarHalfAlt}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={['far', 'star']}></FontAwesomeIcon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="v-boxes third">
+                <div className="box">
+                  <span className="tooltip">Ruby ROR</span>
+                  <div className="box-face">
+                    <div className="box-text"><FontAwesomeIcon icon={faGem}></FontAwesomeIcon></div>
+                  </div>
+                  <div className="box-back">
+                    <div className="box-text">
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={['far', 'star']}></FontAwesomeIcon>
+                    </div>
+                  </div>
+                </div>
+                <div className="box">
+                  <span className="tooltip">React</span>
+                  <div className="box-face">
+                    <div className="box-text"><FontAwesomeIcon icon={faReact}></FontAwesomeIcon></div>
+                  </div>
+                  <div className="box-back">
+                    <div className="box-text">
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                      <FontAwesomeIcon icon={['far', 'star']}></FontAwesomeIcon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="v-boxes forth">
+                <div className="box link">
+                  <div className="box-face">
+                    <div className="box-text"><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
+
   );
 }
