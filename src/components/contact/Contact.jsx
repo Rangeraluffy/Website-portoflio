@@ -28,7 +28,7 @@ export default function Contact() {
     //   </form>
     // </div>
 
-    <div className="container">
+    <div className="container" id="contact">
       <form onSubmit={sendEmail}>
       <input name="name" type="text" class="feedback-input" placeholder="Name" />
       <input name="email" type="text" class="feedback-input" placeholder="Email" />
