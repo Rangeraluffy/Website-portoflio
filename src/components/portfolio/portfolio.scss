@@ -18,12 +18,17 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 15px;
+
+    @include mobile{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 
   .container{
     width: 100%;
     display: flex;
-
   }
 }
 
@@ -46,6 +51,14 @@
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 10%;
+
+    @include mobile{
+      width: 100%;
+    }
+
+    @include tablet{
+      width: 100%;
+    }
   }
   .cta-links{
     font-size: 25px;
