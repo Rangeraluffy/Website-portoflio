@@ -39,7 +39,7 @@ export default function Intro() {
           <h3>Student <span ref={textRef}></span></h3>
           <h3>Learn at <span ref={textRef2}></span></h3>
         </div>
-        <a href="#skills">
+        <a href="#contact">
           <img src="assets/down.png" alt="" />
         </a>
       </div>
