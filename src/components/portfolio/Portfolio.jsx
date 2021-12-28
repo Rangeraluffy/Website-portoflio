@@ -1,13 +1,44 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo, useCallback } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
-import {allPortfolio, schoolPortfolio, personnalPortfolio, webPortfolio} from "../../data";
+import {allPortfolio} from "../../data";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes} from '@fortawesome/free-solid-svg-icons';
 
 
 export default function Portfolio() {
-  const [selected,setSelected] = useState("all");
-  const [data,setData] = useState([]);
-  const list = [
+
+  const [portfolioModalState, setPortfolioModalState] = useState({
+    open: false,
+    data: null,
+  });
+
+  const togglePortfolio = useCallback((data) => {
+    setPortfolioModalState({open: !portfolioModalState.open, data: data});
+  }, [setPortfolioModalState, portfolioModalState.open]);
+
+  const openPortfolioModal = useCallback((data) => {
+    setPortfolioModalState({open: true, data: data})
+  }, []);
+
+  const closePortfolioModal = useCallback(() => {
+    setPortfolioModalState({
+      open: false,
+      data: null,
+    })
+  }, []);
+
+  useEffect(() => {
+    if(portfolioModalState.open) {
+      document.body.classList.add('active-modal')
+    } else {
+      document.body.classList.remove('active-modal')
+    }
+  }, [portfolioModalState.open]);
+
+  const [selected, setSelected] = useState("all");
+  const [data, setData] = useState([]);
+  const menuData = useMemo(() => [
     {
       id: "all",
       title: "All"
@@ -24,43 +55,57 @@ export default function Portfolio() {
       id: "web",
       title: "Web application"
     },
-  ];
+  ], []);
 
   useEffect(()=>{
-    switch(selected){
-      case "all":
+    if(selected === 'all'){
       setData(allPortfolio);
-      break;
-      case "school":
-      setData(schoolPortfolio);
-      break;
-      case "personal":
-      setData(personnalPortfolio);
-      break;
-      case "web":
-      setData(webPortfolio);
     }
-  },[selected])
+    else {
+      setData(allPortfolio.filter((item) => item.category === selected));
+    }
+  },[selected]);
 
   return (
+
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
+
       <ul>
-        {list.map((item) =>(
+        {menuData.map((menuItem) =>(
         <PortfolioList
-          title={item.title}
-          active={selected === item.id}
+          title={menuItem.title}
+          active={selected === menuItem.id}
           setSelected={setSelected}
-          id={item.id}
+          id={menuItem.id}
           />
         ))}
       </ul>
+
+      {portfolioModalState.open ? (
+        <div className="modal_portfolio">
+          <div onClick={closePortfolioModal} className="overlay"></div>
+          <div className="modal_content">
+            <div class="modal_details">
+              <h1>{portfolioModalState.data.title}</h1>
+              <p class="modal_description">{portfolioModalState.data.description}</p>
+            </div>
+
+            <p class="modal__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ex dicta maiores libero minus obcaecati iste optio, eius labore repellendus.</p>
+            <button className="close_modal" onClick={togglePortfolio}>
+              <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon>
+            </button>
+          </div>
+        </div>
+      ) : null}
         <div className="container2">
           {data.map((d)=> (
             <div className="card_portfolio">
               <h1 className="title_portfolio">{d.title}</h1>
               <div className="cta-links">
-                <a href={d.description}>En savoir plus ></a>
+                <button onClick={() => {
+                    openPortfolioModal(d);
+                  }} className="btn-portfolio">En savoir plus ></button>
                 <p>{d.description}</p>
               </div>
               <p className="formation_portfolio">{d.formation}</p>
