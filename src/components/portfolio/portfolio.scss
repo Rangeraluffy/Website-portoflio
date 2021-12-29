@@ -1,13 +1,19 @@
 @import "../../global.scss";
 
 .portfolio{
-  background-color: $mainColor;
+  background-color: $background;
   text-align: center;
   flex-direction: column;
   align-items: center;
 
+  p{
+    color: $text-color;
+  }
+
   h1{
     font-size: 50px;
+    color: $text-color;
+
   }
 
   ul{
@@ -18,6 +24,7 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 15px;
+    color: $text-color;
 
     @include mobile{
       display: flex;
@@ -81,7 +88,19 @@
     margin-right: 50px;
     display: block;
     font-size: 18px;
+    background-color: $salmon-color;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+
+    &:hover{
+      color: white;
+      background: $taupe;
+      text-decoration: none;
+    }
 }
+
 
 .modal_portfolio, .overlay {
     width: 100vw;

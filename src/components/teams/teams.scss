@@ -3,6 +3,10 @@
 .teams {
   box-sizing: border-box;
 
+  h1{
+    color: $text-color;
+  }
+
   .services_section{
     padding: 60px 0;
 
@@ -37,8 +41,8 @@
       display: inline-block;
       width: 70px;
       height: 70px;
-      border: 3px solid #82ccdd;
-      color: #82ccdd;
+      border: 3px solid $taupe;
+      color: $taupe;
       transform: rotate(45deg);
       margin-bottom: 30px;
       margin-top: 16px;
@@ -53,16 +57,19 @@
       }
     }
     .service_box:hover .service_icon{
-      background-color: #82ccdd;
+      background-color: $salmon-color;
+      border: $salmon-color;
       color: #ddd;
     }
     .service_title{
       font-size: 18px;
       text-transform: uppercase;
       margin-bottom: 10px;
+      color: $text-color;
     }
-    .service_desc{
+    .service_descr{
       font-size: 16px;
+      color: $text-color;
     }
   }
 }

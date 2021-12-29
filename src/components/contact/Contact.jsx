@@ -16,17 +16,8 @@ export default function Contact() {
   }
 
   return (
-    // <div className="container">
-    //   <form onSubmit={sendEmail}>
-    //     <label>Name</label>
-    //     <input type="text" name="user_name" />
-    //     <label>Email</label>
-    //     <input type="email" name="user_email" />
-    //     <label>Message</label>
-    //     <textarea name="message" />
-    //     <input type="submit" value="Send" />
-    //   </form>
-    // </div>
+    <div className="contact">
+      <h1>Contact</h1>
 
     <div className="container" id="contact">
       <form onSubmit={sendEmail}>
@@ -36,7 +27,6 @@ export default function Contact() {
       <input type="submit" value="Send"/>
       </form>
     </div>
-
-
+    </div>
   );
 }

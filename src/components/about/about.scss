@@ -1,10 +1,15 @@
 @import "../../global.scss";
 
 .about {
-  background-color: white;
+  background-color: $background;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  p{
+    color: $text-color;
+    font-size: 20px;
+  }
 
   .about-content{
     display: flex;
@@ -57,9 +62,9 @@
       bottom: -4px;
       left: 50%;
       font-size: 20px;
-      color: crimson;
+      color: $salmon-color;
       padding: 0 5px;
-      background: #fff;
+      background: $background;
       transform: translateX(-50%);
   }
 
@@ -81,25 +86,26 @@
       margin-bottom: 10px;
   }
   .about-content .right .text span{
-      color: crimson;
+      color: $salmon-color;
   }
   .about-content .right p{
       text-align: justify;
   }
   .about-content .right a{
       display: inline-block;
-      background: $mainColor;
-      color: #fff;
+      background: $salmon-color;
+      color: white;
       font-size: 20px;
       font-weight: 500;
       padding: 10px 30px;
       margin-top: 20px;
       border-radius: 6px;
-      border: 2px solid $mainColor;
       transition: all 0.3s ease;
+      text-decoration: none;
   }
   .about-content .right a:hover{
-      color: black;
-      background: none;
+      color: white;
+      background: $taupe;
+      text-decoration: none;
   }
 }

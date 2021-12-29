@@ -1,8 +1,14 @@
 import "./about.scss";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
+import { useTranslation } from 'react-i18next';
 
 export default function About() {
+  const { t, i18n } = useTranslation();
+
+  function handleClick(lang) {
+    i18n.changeLanguage(lang);
+  }
 
   const textRef = useRef();
 

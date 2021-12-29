@@ -1,8 +1,7 @@
 @import "../../global.scss";
 
 .contact {
-  background-color: $mainColor;
-  display: flex;
+  background-color: $background;
 }
 
 form {
@@ -28,7 +27,7 @@ form {
   outline:0;
 }
 
-.feedback-input:focus { border:2px solid #CC4949; }
+.feedback-input:focus { border:2px solid $salmon-color; }
 
 textarea {
   height: 150px;
@@ -38,7 +37,7 @@ textarea {
 
 [type="submit"] {
   width: 100%;
-  background:$secondColor;
+  background:$salmon-color;
   border-radius:5px;
   border:0;
   cursor:pointer;
@@ -50,4 +49,4 @@ textarea {
   margin-top:-4px;
   font-weight:700;
 }
-[type="submit"]:hover { background:$whiteColor; }
+[type="submit"]:hover { background:$taupe; }

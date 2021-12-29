@@ -1,7 +1,15 @@
 import "./topbar.scss"
 import {Person, Mail} from '@material-ui/icons/';
+import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
+
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
+  const { t, i18 } = useTranslation();
+
+ function handleClick(lang) {
+   i18next.changeLanguage(lang)
+ }
   return (
     <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
@@ -14,6 +22,14 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <div className="itemContainer">
               <Mail className="icon"/>
               <span>alexandre.marolleau@hotmail.fr</span>
+            </div>
+            <div className="itemContainer">
+              <button onClick={()=>handleClick('en')} >
+                English
+              </button>
+              <button onClick={()=>handleClick('fr')} >
+                French
+              </button>
             </div>
         </div>
         <div className="right">
