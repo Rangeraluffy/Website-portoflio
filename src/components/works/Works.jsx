@@ -190,7 +190,7 @@ export default function Works() {
               <div className="box link">
                 <div className="box-face">
                   <div className="box-text">
-                    <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+                    <a href="https://github.com/Rangeraluffy?tab=repositories" target="_blank"><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></a>
                   </div>
                 </div>
               </div>

@@ -39,7 +39,7 @@ export default function About() {
                 specialisation in web development application to obtain my Certificate of Open
                 Studies (COS).
               </p>
-              <a href="/#">Download CV</a>
+              <a href="/assets/CV_Alexandre_Marolleau_EN.pdf" target="_blank">Download CV</a>
             </div>
           </div>
         </div>
