@@ -64,7 +64,7 @@ export default function Teams() {
               </div>
               <div className="service_title">Web Designs</div>
               <div className="service_descr">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem{' '}
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </div>
             </div>
             <div className="service_box">
