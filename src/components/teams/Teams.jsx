@@ -12,7 +12,7 @@ import {
 export default function Teams() {
   return (
     <div className="teams" id="teams">
-      <h1> Teams Working </h1>
+      <h1 className="title"> Teams Working </h1>
       <div className="services_section">
         <div className="inner_width">
           <div className="services_container">

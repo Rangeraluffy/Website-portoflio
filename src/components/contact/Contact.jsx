@@ -22,7 +22,7 @@ export default function Contact() {
 
   return (
     <div className="contact">
-      <h1>Contact</h1>
+      <h1 className="title">Contact</h1>
 
       <div className="container" id="contact">
         <form onSubmit={sendEmail}>

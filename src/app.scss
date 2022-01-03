@@ -1,6 +1,11 @@
 .app{
   height: 100vh;
 
+  .title{
+    text-transform: uppercase;
+    padding-top: 15px;
+  }
+
   .sections{
     width: 100%;
     height: calc(100vh - 70px);

@@ -10,7 +10,6 @@ const allPortfolio = [
       fr: {
         title: 'Chablais Immobilier',
         description: "Il s'agit de mon projet final pour compléter le programme de développement d'applications Web. Mon objectif est de mettre en valeur les connaissances et les compétences que j'ai développées tout au long des quatres cours de ce programme. Celui-ci était la dernière étape pour compléter le programme complet de l'EPFL Extension School. Après une présentation devant un jury, celui ci a été validé et félicité.",
-        formation: 'Project Final , Présenter a un Jury',
         firstTitleModal: 'Aperçu du projet',
         firstDescription: "Peillex Immobilier a été imaginé comme une refonte d'une agence immobilière déjà existante sur le marché du Chablais. Donner un nouveau style à un marché très concurrentiel. L'administrateur peut créer des comptes pour les agents qui travaillent dans cette agence et ainsi publier des actualités liées au marché immobilier ou simplement de nouveaux mandats pour la vente de maisons ou d'appartements.",
         projectGoal: 'Objectifs du projet',
@@ -22,7 +21,6 @@ const allPortfolio = [
       en: {
         title: 'Chablais Property',
         description: 'This is the Capstone Project for the Web Application Development Program. As a final step to complete the full program of EPFL Extension School.',
-        formation: 'Final Project, Present to a Jury',
         firstTitleModal: 'Project overview',
         firstDescription: "'Peillex Real Estate' was imagined like a redesign of an already existing real estate agency on the Chablais market. To give a new style with a very competitive market. The administrator can create accounts for agents who work in this agency and thus published news related to the real estate market or simply new mandates for the sale of houses or apartments.",
         projectGoal: 'Project goals',
@@ -42,7 +40,6 @@ const allPortfolio = [
       fr: {
         title: 'Covid Web Site',
         description: "Il s'agit d'un projet personnel réalisé le soir sur mon temps libre pour améliorer mes compétences en CSS pur.",
-        formation: 'Autodidacte',
         firstTitleModal: 'Aperçu du projet',
         firstDescription: 'Le HTML était déjà présent dans le code le principe étant avec les images fournies dans le fichier de faire simplement tout le site en CSS sans toucher au HTML.',
         projectGoal: 'Objectifs du projet',
@@ -53,7 +50,6 @@ const allPortfolio = [
       en: {
         title: 'Covid Web Site',
         description: 'This is a personal project carried out in the evening on my free time to improve my CSS skills. This project was developed by Alexandre Marolleau.',
-        formation: 'Autodidacte',
         firstTitleModal: 'Project overview',
         firstDescription: 'The HTML was already present in the code the principle being with the images provided in the file to simply make the whole website in CSS without touching the HTML.',
         projectGoal: 'Objectifs du projet',
@@ -73,7 +69,6 @@ const allPortfolio = [
       fr: {
         title: 'Pro Tips',
         description: "Il s'agit du projet du cours Applications Web dynamiques. Le troisième projet de cours de l'EPFL Extension School sur le programme Web application development program.",
-        formation: 'School',
         firstTitleModal: 'Aperçu du projet',
         firstDescription: "L'application est un forum de conseils, appelé Pro Tips, qui permet aux développeurs de s'inscrire et de partager de courts conseils entre eux, puis de commenter les conseils que d'autres ont créés. Il est possible de se connecter en tant qu'Administrateur et de gérer les utilisateurs, commentaires, tips.",
         projectGoal: 'Objectifs du projet'
@@ -81,7 +76,6 @@ const allPortfolio = [
       en: {
         title: 'Pro Tips',
         description: 'This is the Dynamic web applications course project. The third course project of the EPFL Extension School about the program Web application development program.',
-        formation: 'School',
         firstTitleModal: 'Project overview',
         firstDescription: 'The application is a tips forum, called Pro Tips, that allows developers to register and share short bits of advice with each other, and then comment on the tips others have created. It is possible to connect as Administrator and manage users, comments, tips.',
         projectGoal: 'Project goals'
@@ -97,7 +91,6 @@ const allPortfolio = [
       fr: {
         title: 'Personnel Portfolio',
         description: 'Je suis en francais',
-        formation: 'Je suis en francais',
         firstTitleModal: 'Aperçu du projet',
         firstDescription: 'Je suis en francais',
         projectGoal: 'Objectifs du projet'
@@ -105,7 +98,6 @@ const allPortfolio = [
       en: {
         title: 'Personnal Portfolio',
         description: 'This is a personal project carried out in the evening on my free time to improve my CSS skills. This project was developed by Alexandre Marolleau.',
-        formation: 'Free Times',
         firstTitleModal: 'Project overview',
         firstDescription: 'The HTML was already present in the code the principle being with the images provided in the file to simply make the whole website in CSS without touching the HTML.',
         projectGoal: 'Project goals'
@@ -121,7 +113,6 @@ const allPortfolio = [
       fr: {
         title: 'Project 2 Javascript',
         description: "Le site Web est en HTML, CSS et avec des images statiques ; mon travail consistait à faire fonctionner ces pages Web statiques de manière dynamique avec différentes techniques JavaScript.",
-        formation: 'School',
         firstTitleModal: 'Aperçu du projet',
         firstDescription: "L'objectif du site est de permettre aux visiteurs de visualiser les accessoires vestimentaires par catégorie (chapeaux, gants, chaussettes et lunettes de soleil), de filtrer par couleur, puis d'ajouter des articles à leur panier. La liste de souhaits peut ensuite être consultée et des éléments peuvent être supprimés de la liste de souhaits",
         projectGoal: 'Objectifs du projet'
@@ -145,7 +136,6 @@ const allPortfolio = [
       fr: {
         title: 'Project 3 Ruby on Rails',
         description: "Le projet 3 était le premier projet sous Ruby On rails : il s'agissais d'évaluer mes capacité à interpréter le résumé du projet et à créer les modèles, contrôleurs, vues et itinéraires appropriés. En particulier, la soumission du projet doit démontrer tous les aspects du développement avec le framework Ruby on Rails enseigné dans mon cours.",
-        formation: 'School',
         firstTitleModal: 'Aperçu du projet',
         firstDescription: "Créez une application qui permet aux utilisateurs de créer un tableau d'affichage virtuel pour les images et les photos qu'ils trouvent en ligne, de rechercher, épingler , se connecter, ajouter des commentaires. Ce sera une expérience similaire mais plus basique au site Web populaire Pinterest.",
         projectGoal: 'Objectifs du projet'

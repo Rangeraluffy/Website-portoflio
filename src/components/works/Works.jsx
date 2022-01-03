@@ -23,7 +23,7 @@ export default function Works() {
   const alignCenter = { display: 'flex', alignItems: 'center' };
   return (
     <div className="skills" id="skills">
-      <h1>Skills</h1>
+      <h1 className="title">Skills</h1>
       <div className="section">
         <div className="container">
           <div className="wall">

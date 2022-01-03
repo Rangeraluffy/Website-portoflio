@@ -76,7 +76,7 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
+      <h1 className="title">Portfolio</h1>
       <ul>
         {menuData.map((menuItem) => (
           <PortfolioList
@@ -141,9 +141,9 @@ export default function Portfolio() {
               >
                 En savoir plus
               </button>
-              <p>{d.tools}</p>
+              <p className="tools">{d.tools}</p>
             </div>
-            <p className="formation_portfolio">{d.languages[i18n.language].formation}</p>
+
             <img src={d.img} alt="" />
           </div>
         ))}
