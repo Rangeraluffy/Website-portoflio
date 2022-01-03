@@ -16,6 +16,27 @@
     align-items: center;
     justify-content: space-between;
 
+    .btn_top_bar {
+      background: $salmon-color;
+      color: white;
+      font-size: 20px;
+      font-weight: 500;
+      padding: 2px 20px;
+      margin-top: 20px;
+      border-radius: 6px;
+      margin: 10px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+    .btn_top_bar:hover {
+      color: white;
+      background: $taupe;
+      text-decoration: none;
+    }
+
     .left {
       display: flex;
       align-items: center;
@@ -26,7 +47,7 @@
         text-decoration: none;
         color: inherit;
         margin-right: 40px;
-        color: $text-color;
+
 
         a{
             color: #fff;
@@ -44,7 +65,6 @@
         display: flex;
         align-items: center;
         margin-left: 30px;
-        color: $whiteColor;
 
         @include mobile{
           display: none;
@@ -53,13 +73,13 @@
         .icon {
           font-size: 18px;
           margin-right: 5px;
-          color: $salmon-color;
+
         }
 
         span {
           font-size: 15px;
           font-weight: 400;
-          color: $text-color;
+          color: $salmon-color;
         }
       }
     }
@@ -86,7 +106,7 @@
 
   &.active {
     background-color: $taupe;
-    color: white;
+    color: $salmon-color;
 
     .hamburger {
       span {

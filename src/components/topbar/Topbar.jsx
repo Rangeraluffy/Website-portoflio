@@ -27,8 +27,8 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <span>alexandre.marolleau@hotmail.fr</span>
           </div>
           <div className="itemContainer">
-            <button onClick={() => handleClick('en')}>English</button>
-            <button onClick={() => handleClick('fr')}>French</button>
+            <button className="btn_top_bar" onClick={() => handleClick('en')}>English</button>
+            <button className="btn_top_bar" onClick={() => handleClick('fr')}>French</button>
           </div>
         </div>
         <div className="right">
