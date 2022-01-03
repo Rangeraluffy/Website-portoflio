@@ -8,6 +8,10 @@
   cursor: pointer;
   color: $text-color;
 
+  a {
+    text-decoration: none;
+  }
+
 
   @include mobile{
   margin: 0;
@@ -16,5 +20,6 @@
   &.active{
     background-color: $salmon-color;
     color: white;
+    text-decoration: none;
   }
 }

@@ -1,14 +1,10 @@
-import "./about.scss";
-import { init } from "ityped";
-import { useEffect, useRef } from "react";
+import './about.scss';
+import { init } from 'ityped';
+import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
 export default function About() {
-  const { t, i18n } = useTranslation();
-
-  function handleClick(lang) {
-    i18n.changeLanguage(lang);
-  }
+  const { t } = useTranslation();
 
   const textRef = useRef();
 
@@ -16,26 +12,36 @@ export default function About() {
     init(textRef.current, {
       showCursor: true,
       backDelay: 1500,
-      backSpeed:40,
-      strings: ["Looking", "For a new", "Job"],
+      backSpeed: 40,
+      strings: [t('Intro.1'), 'Looking for a new', 'Job']
     });
-  }, []);
+  }, [t]);
 
   return (
     <div className="about" id="about">
-      <div class="max-width">
+      <div className="max-width">
         <div className="container">
-          <h1 class="title">About me</h1>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="assets/profil.png" alt=""/>
-                </div>
-                <div class="column right">
-                    <div class="text">I'm Alexandre and I <span ref={textRef}></span></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing at voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
-                    <a href="#">Download CV</a>
-                </div>
+          <h1 className="title">About me</h1>
+          <div className="about-content">
+            <div className="column left">
+              <img src="assets/profil.png" alt="" />
             </div>
+            <div className="column right">
+              <div className="text">
+                I&apos;m Alexandre and I
+                <span ref={textRef} />
+              </div>
+              <p>
+                Hello there my Name is Alexandre Marolleau I am 26 years. Originaly from
+                Haute-Savoie. I looking a new opportunity in Web developmen.Holder of a Bachelor in
+                Game Design acquired at Bellecour Ecole (Lyon – France), Recently graduated at the
+                Ecole Polytechnique Fédérale de Lausanne (EPFL) Extension School with a
+                specialisation in web development application to obtain my Certificate of Open
+                Studies (COS).
+              </p>
+              <a href="/#">Download CV</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

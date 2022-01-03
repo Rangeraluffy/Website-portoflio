@@ -1,9 +1,12 @@
-import "./portfoliolist.scss"
+import React from 'react';
+import './portfoliolist.scss';
 
-export default function portfolioList({id,title,active,setSelected }) {
+export default function portfolioList({ id, title, active, setSelected }) {
   return (
-    <li className={active ? "portfolioList active" :  "portfolioList "} onClick={() => setSelected(id)}>
-      {title}
+    <li className={active ? 'portfolioList active' : 'portfolioList '}>
+      <a href="/#" onClick={() => setSelected(id)}>
+        {title}
+      </a>
     </li>
-  )
+  );
 }
