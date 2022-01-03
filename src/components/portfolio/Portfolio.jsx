@@ -96,11 +96,11 @@ export default function Portfolio() {
             <div className="modal_details">
               <h1>{portfolioModalState.data.languages[i18n.language].title}</h1>
               <h2>{portfolioModalState.data.github}</h2>
-              <span>{portfolioModalState.data.url}</span>
+              <a href={portfolioModalState.data.url} target="_blank">{portfolioModalState.data.url}</a>
               <p className="modal_description">
                 {portfolioModalState.data.languages[i18n.language].description}
               </p>
-              <span>{portfolioModalState.data.gitHub}</span>
+              <a href={portfolioModalState.data.gitHub} target="_blank">{portfolioModalState.data.gitHub}</a>
             </div>
             <h1>{portfolioModalState.data.languages[i18n.language].firstTitleModal}</h1>
             <p className="modal_text">
