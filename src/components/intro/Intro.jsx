@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
 export default function Intro() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const textRef = useRef();
 
   useEffect(() => {
@@ -39,10 +39,10 @@ export default function Intro() {
           <h2>{t('Intro.1')}</h2>
           <h1>Alexandre Marolleau</h1>
           <h3>
-            I am <span ref={textRef} />
+            {t('Intro.2')}<span ref={textRef} />
           </h3>
           <h3>
-            Graduated from <span ref={textRef2} />
+            {t('Intro.3')}<span ref={textRef2} />
           </h3>
         </div>
         <a href="#contact">
