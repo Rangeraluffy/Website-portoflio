@@ -1,8 +1,12 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import './contact.scss';
+import { useTranslation } from 'react-i18next';
 
 export default function Contact() {
+
+  const { t } = useTranslation();
+
   function sendEmail(e) {
     e.preventDefault();
 
@@ -22,14 +26,14 @@ export default function Contact() {
 
   return (
     <div className="contact">
-      <h1 className="title">Contact</h1>
+      <h1 className="title">{t('Contact.1')}</h1>
 
       <div className="container" id="contact">
         <form onSubmit={sendEmail}>
-          <input name="name" type="text" className="feedback-input" placeholder="Name" />
-          <input name="email" type="text" className="feedback-input" placeholder="Email" />
-          <textarea name="message" className="feedback-input" placeholder="Comment" />
-          <input type="submit" value="Send" />
+          <input name="name" type="text" className="feedback-input" placeholder={t('Contact.2')} required=""/>
+          <input name="email" type="text" className="feedback-input" placeholder="Email" required=""/>
+          <textarea name="message" className="feedback-input" placeholder={t('Contact.3')} required=""/>
+          <input type="submit" value={t('Contact.4')} />
         </form>
       </div>
     </div>

@@ -14,16 +14,17 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faStar as faStarRegular, faGem } from '@fortawesome/free-regular-svg-icons';
 import { faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
-
 import './works.scss';
+import { useTranslation } from 'react-i18next';
 
 library.add(faStarRegular);
 
 export default function Works() {
+  const { t } = useTranslation();
   const alignCenter = { display: 'flex', alignItems: 'center' };
   return (
     <div className="skills" id="skills">
-      <h1 className="title">Skills</h1>
+      <h1 className="title">{t('Skills.1')}</h1>
       <div className="section">
         <div className="container">
           <div className="wall">

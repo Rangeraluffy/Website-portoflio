@@ -8,8 +8,10 @@ import {
   faMobileAlt,
   faBuilding
 } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 export default function Teams() {
+  const { t } = useTranslation();
   return (
     <div className="teams" id="teams">
       <h1 className="title"> Teams Working </h1>
@@ -22,9 +24,7 @@ export default function Teams() {
               </div>
               <div className="service_title">Web Designs</div>
               <div className="service_descr">
-                Web design are a quality for me in Game design i used a lot UI UX for game
-                development and use some tools like photoshop. So i have a good perception to create
-                a design.
+                {t('Teams.1')}
               </div>
             </div>
             <div className="service_box">
@@ -33,8 +33,7 @@ export default function Teams() {
               </div>
               <div className="service_title">Web Development</div>
               <div className="service_descr">
-                Learned during my years of Web application with the EPFL , on 5 project , how to
-                start how to think, how to solve some problems.
+                {t('Teams.2')}
               </div>
             </div>
             <div className="service_box">
@@ -43,9 +42,7 @@ export default function Teams() {
               </div>
               <div className="service_title">Team Working</div>
               <div className="service_descr">
-                Professional team working with my experiences in Real Estate. Communicate with the
-                team about property to sell , prospecting in team , help others sellers on difficult
-                contract.
+                {t('Teams.3')}
               </div>
             </div>
             <div className="service_box">
@@ -54,8 +51,7 @@ export default function Teams() {
               </div>
               <div className="service_title">Team Building</div>
               <div className="service_descr">
-                Working with team during my 3 years of Bachelor Game design with a lead on all
-                project.
+                {t('Teams.4')}
               </div>
             </div>
             <div className="service_box">
@@ -73,9 +69,7 @@ export default function Teams() {
               </div>
               <div className="service_title">Responsive Designs</div>
               <div className="service_descr">
-                Because the smartphone has become our first screen, a mobile-optimized website is
-                one of the best practices in digital marketing. This is the first thing i learned
-                during my studies.
+                {t('Teams.5')}
               </div>
             </div>
           </div>

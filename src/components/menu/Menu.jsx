@@ -25,7 +25,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
           <a href="#skills">{t('Menu.2')}</a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a href="#contact">Contact</a>
+          <a href="#contact">{t('Contact.1')}</a>
         </li>
       </ul>
     </div>
