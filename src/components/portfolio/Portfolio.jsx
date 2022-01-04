@@ -104,22 +104,7 @@ export default function Portfolio() {
             <h1>{portfolioModalState.data.languages[i18n.language].firstTitleModal}</h1>
             <p className="modal_text">
               {portfolioModalState.data.languages[i18n.language].firstDescription}
-            </p>
-            <h1 className="project_goal">{portfolioModalState.data.languages[i18n.language].projectGoal}</h1>
-            <div className="modal_project_goal">
-              <li className="modal_text">
-                {portfolioModalState.data.languages[i18n.language].projectGoal1}
-              </li >
-              <li className="modal_text">
-                {portfolioModalState.data.languages[i18n.language].projectGoal2}
-              </li >
-              <li className="modal_text">
-                {portfolioModalState.data.languages[i18n.language].projectGoal3}
-              </li >
-              <li className="modal_text">
-                {portfolioModalState.data.languages[i18n.language].projectGoal4}
-              </li >
-            </div>
+            </p>    
             <button type="button" className="close_modal" onClick={togglePortfolio}>
               <FontAwesomeIcon icon={faTimes} />
             </button>
