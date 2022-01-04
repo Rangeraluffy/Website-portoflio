@@ -1,7 +1,11 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './menu.scss';
 
 export default function Menu({ menuOpen, setMenuOpen }) {
+
+  const { t } = useTranslation();
+
   return (
     <div className={'menu ' + (menuOpen && 'active')}>
       <ul>
@@ -9,7 +13,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
           <a href="#intro">Home</a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a href="#about">About</a>
+          <a href="#about">{t('Menu.1')}</a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
           <a href="#teams">Teams</a>
@@ -18,7 +22,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
           <a href="#portfolio">Portfolio</a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a href="#skills">Skills</a>
+          <a href="#skills">{t('Menu.2')}</a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
           <a href="#contact">Contact</a>
