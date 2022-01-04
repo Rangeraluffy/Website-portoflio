@@ -49,7 +49,8 @@ const allPortfolio = [
         projectGoal: 'Objectifs du projet',
         projectGoal1: 'Front-end and back-end',
         projectGoal2: 'Third party software and services',
-        projectGoal3: 'General programming techniques'
+        projectGoal3: 'General programming techniques',
+        clickGit: "Cliquez ici pour visualiser ce projet sur Github"
       },
       en: {
         title: 'Covid Web Site',
@@ -59,7 +60,8 @@ const allPortfolio = [
         projectGoal: 'Objectifs du projet',
         projectGoal1: 'Front-end and back-end',
         projectGoal2: 'Third party software and services',
-        projectGoal3: 'General programming techniques'
+        projectGoal3: 'General programming techniques',
+        clickGit: 'Click here to view this project on GitHub'
       }
     }
   }, {
@@ -75,14 +77,18 @@ const allPortfolio = [
         description: "Il s'agit du projet du cours Applications Web dynamiques. Le troisième projet de cours de l'EPFL Extension School sur le programme Web application development program.",
         firstTitleModal: 'Aperçu du projet',
         firstDescription: "L'application est un forum de conseils, appelé Pro Tips, qui permet aux développeurs de s'inscrire et de partager de courts conseils entre eux, puis de commenter les conseils que d'autres ont créés. Il est possible de se connecter en tant qu'Administrateur et de gérer les utilisateurs, commentaires, tips.",
-        projectGoal: 'Objectifs du projet'
+        projectGoal: 'Objectifs du projet',
+        clickLink: "Cliquez ici pour visualiser cette application",
+        clickGit: "Cliquez ici pour visualiser ce projet sur Github"
       },
       en: {
         title: 'Pro Tips',
         description: 'This is the Dynamic web applications course project. The third course project of the EPFL Extension School about the program Web application development program.',
         firstTitleModal: 'Project overview',
         firstDescription: 'The application is a tips forum, called Pro Tips, that allows developers to register and share short bits of advice with each other, and then comment on the tips others have created. It is possible to connect as Administrator and manage users, comments, tips.',
-        projectGoal: 'Project goals'
+        projectGoal: 'Project goals',
+        clickLink: 'Click here to view this app',
+        clickGit: 'Click here to view this project on GitHub'
       }
     }
   }, {
@@ -97,14 +103,18 @@ const allPortfolio = [
         description: 'Je suis en francais',
         firstTitleModal: 'Aperçu du projet',
         firstDescription: 'Je suis en francais',
-        projectGoal: 'Objectifs du projet'
+        projectGoal: 'Objectifs du projet',
+        // clickLink: "Cliquez ici pour visualiser cette application",
+        clickGit: "Cliquez ici pour visualiser ce projet sur Github"
       },
       en: {
         title: 'Personnal Portfolio',
         description: 'This is a personal project carried out in the evening on my free time to improve my CSS skills. This project was developed by Alexandre Marolleau.',
         firstTitleModal: 'Project overview',
         firstDescription: 'The HTML was already present in the code the principle being with the images provided in the file to simply make the whole website in CSS without touching the HTML.',
-        projectGoal: 'Project goals'
+        projectGoal: 'Project goals',
+        // clickLink: 'Click here to view this app',
+        clickGit: 'Click here to view this project on GitHub'
       }
     }
   }, {
@@ -120,6 +130,7 @@ const allPortfolio = [
         firstTitleModal: 'Aperçu du projet',
         firstDescription: "L'objectif du site est de permettre aux visiteurs de visualiser les accessoires vestimentaires par catégorie (chapeaux, gants, chaussettes et lunettes de soleil), de filtrer par couleur, puis d'ajouter des articles à leur panier. La liste de souhaits peut ensuite être consultée et des éléments peuvent être supprimés de la liste de souhaits",
         projectGoal: 'Objectifs du projet',
+        clickGit: "Cliquez ici pour visualiser ce projet sur Github"
       },
       en: {
         title: 'Project 2 Javascript',
@@ -128,6 +139,7 @@ const allPortfolio = [
         firstTitleModal: 'Project overview',
         firstDescription: 'The aim of the site is to allows visitors to view clothing accessories by category (hats, gloves, socks, and sunglasses), filter by color, and then add up to three items to their own wishlist. The wishlist can then be viewed, and items can be removed from the wishlist.',
         projectGoal: 'Project goals',
+        clickGit: 'Click here to view this project on GitHub'
       }
     }
   }, {
@@ -142,7 +154,8 @@ const allPortfolio = [
         description: "Le projet 3 était le premier projet sous Ruby On rails : il s'agissais d'évaluer mes capacité à interpréter le résumé du projet et à créer les modèles, contrôleurs, vues et itinéraires appropriés. En particulier, la soumission du projet doit démontrer tous les aspects du développement avec le framework Ruby on Rails enseigné dans mon cours.",
         firstTitleModal: 'Aperçu du projet',
         firstDescription: "Créez une application qui permet aux utilisateurs de créer un tableau d'affichage virtuel pour les images et les photos qu'ils trouvent en ligne, de rechercher, épingler , se connecter, ajouter des commentaires. Ce sera une expérience similaire mais plus basique au site Web populaire Pinterest.",
-        projectGoal: 'Objectifs du projet'
+        projectGoal: 'Objectifs du projet',
+        clickGit: "Cliquez ici pour visualiser ce projet sur Github"
       },
       en: {
         title: 'Project 3 Ruby on Rails',
@@ -150,7 +163,8 @@ const allPortfolio = [
         formation: 'School',
         firstTitleModal: 'Project overview',
         firstDescription: 'Create an application that allows people to create a virtual pinboard for images and photos that they find online, search, pin, connect, add comments. It will be a similar but more basic experience to the popular website Pinterest website.',
-        projectGoal: 'Project goals'
+        projectGoal: 'Project goals',
+        clickGit: 'Click here to view this project on GitHub'
       }
     }
   }

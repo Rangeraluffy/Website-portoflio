@@ -1,5 +1,4 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
+
 import React, { useEffect, useState, useMemo, useCallback } from 'react';
 import './portfolio.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -106,7 +105,7 @@ export default function Portfolio() {
             <p className="modal_text">
               {portfolioModalState.data.languages[i18n.language].firstDescription}
             </p>
-            <h1>{portfolioModalState.data.languages[i18n.language].projectGoal}</h1>
+            <h1 className="project_goal">{portfolioModalState.data.languages[i18n.language].projectGoal}</h1>
             <div className="modal_project_goal">
               <li className="modal_text">
                 {portfolioModalState.data.languages[i18n.language].projectGoal1}
