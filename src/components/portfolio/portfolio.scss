@@ -141,6 +141,10 @@
       display: none;
     }
 
+    @include computer {
+      display: none;
+    }
+
     li {
       margin: auto;
       padding: 10px 0;
@@ -155,6 +159,10 @@
 
   .project_goal {
     @include mobile {
+      display: none;
+    }
+
+    @include computer {
       display: none;
     }
   }

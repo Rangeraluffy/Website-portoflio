@@ -70,6 +70,10 @@
           display: none;
         }
 
+        @include computer{
+          display: none;
+        }
+
         .icon {
           font-size: 18px;
           margin-right: 5px;
