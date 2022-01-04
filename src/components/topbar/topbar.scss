@@ -31,6 +31,7 @@
       cursor: pointer;
       text-transform: uppercase;
     }
+
     .btn_top_bar:hover {
       color: white;
       background: $taupe;
@@ -48,16 +49,24 @@
         color: inherit;
         margin-right: 40px;
 
-
-        a{
-            color: #fff;
-            font-size: 35px;
-            font-weight: 600;
+        a {
+          color: #fff;
+          font-size: 35px;
+          font-weight: 600;
         }
 
-        span{
-            color: $salmon-color;
-            transition: all 0.3s ease;
+        span {
+          color: $salmon-color;
+          transition: all 0.3s ease;
+        }
+      }
+
+      .top_bar_langages {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        @include mobile {
+          display: none;
         }
       }
 
@@ -65,19 +74,17 @@
         display: flex;
         align-items: center;
         margin-left: 30px;
-
-        @include mobile{
+        @include mobile {
           display: none;
         }
 
-        @include computer{
+        @include computer {
           display: none;
         }
 
         .icon {
           font-size: 18px;
           margin-right: 5px;
-
         }
 
         span {
@@ -118,9 +125,11 @@
           background-color: white;
           transform: rotate(45deg);
         }
+
         &:nth-child(2) {
           opacity: 0;
         }
+
         &:last-child {
           background-color: white;
           transform: rotate(-45deg);

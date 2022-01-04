@@ -40,7 +40,11 @@
         height: 90%;
 
         @include mobile{
-          height: 50%;
+          height: 100%;
+        }
+
+        @include computer{
+          height: 100%;
         }
       }
     }

@@ -19,14 +19,10 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             Alexandre <span>Marolleau</span>
           </a>
           <div className="itemContainer">
-            <Person className="icon" />
-            <span>+33 6 59 08 60 95</span>
-          </div>
-          <div className="itemContainer">
             <Mail className="icon" />
             <span>alexandre.marolleau@hotmail.fr</span>
           </div>
-          <div className="itemContainer">
+          <div className="top_bar_langages">
             <button className="btn_top_bar" onClick={() => handleClick('en')}>English</button>
             <button className="btn_top_bar" onClick={() => handleClick('fr')}>French</button>
           </div>
