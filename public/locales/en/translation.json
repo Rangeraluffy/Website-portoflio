@@ -1,8 +1,33 @@
 {
-  "About": {
-    "1": "Thanks you"
-  },
   "Intro": {
-    "1": "Hi There, I'm"
+    "1": "Hi There, I'm",
+    "2": "I am",
+    "3": "Graduated from"
+  },
+  "Menu": {
+    "1": "About me",
+    "2": "Skills"
+  },
+  "About": {
+    "1": "About me",
+    "2": "I'm Alexandre and I",
+    "3": "looking for a new Job",
+    "4": "Hello there my Name is Alexandre Marolleau I am 26 years. Originaly from Haute-Savoie I looking a new opportunity in Web developmen.Holder of a Bachelor in Game Design acquired at Bellecour Ecole (Lyon – France), Recently graduated at the Ecole Polytechnique Fédérale de Lausanne (EPFL) Extension School with a specialisation in web development application to obtain my Certificate of Open Studies (COS)"
+  },
+  "Teams": {
+    "1": "Web design are a quality for me in Game design i used a lot UI UX for game development and use some tools like photoshop. So i have a good perception to create a design.",
+    "2": "Learned during my years of Web application with the EPFL , on 5 project , how to start how to think, how to solve some problems.",
+    "3": "Professional team working with my experiences in Real Estate. Communicate with the team about property to sell , prospecting in team , help others sellers on difficult contract.",
+    "4": "Working with team during my 3 years of Bachelor Game design with a lead on all project.",
+    "5": "Because the smartphone has become our first screen, a mobile-optimized website is one of the best practices in digital marketing. This is the first thing i learned during my studies."
+  },
+  "Skills": {
+    "1": "Skills"
+  },
+  "Contact": {
+    "1": "Contact",
+    "2": "Name",
+    "3": "Your message",
+    "4": "Send"
   }
 }

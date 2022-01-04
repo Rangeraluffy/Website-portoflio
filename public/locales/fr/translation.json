@@ -1,8 +1,33 @@
 {
-  "About": {
-    "1": "Merci a vous"
-  },
   "Intro": {
-    "1": "Bonjour à tous"
+    "1": "Bonjour, je suis",
+    "2": "Je suis",
+    "3": "Diplômé de"
+  },
+  "Menu": {
+    "1": "À propos de moi",
+    "2": "Compétences"
+  },
+  "About": {
+    "1": "À propos de moi",
+    "2": "Je suis Alexandre et je suis",
+    "3": "À la recherche d'un nouvel emploi",
+    "4": "Bonjour, je m'appelle Alexandre Marolleau j'ai 26 ans. Originaire de Haute-Savoie je recherche une nouvelle opportunité dans le développement Web. Titulaire d'un Bachelor en Game Design acquis à Bellecour Ecole (Lyon – France), Récemment diplômé de l'Ecole Polytechnique Fédérale de Lausanne (EPFL) Extension School avec une spécialisation en développement d'applications web, j'ai donc obtenu mon Certificat d'Etudes Ouvertes (COS)"
+  },
+  "Teams": {
+    "1": "La conception d'une maquette, d'une idée est une qualité pour moi je l'utilisais énormement la conception de jeux. J'ai beaucoup utilisé l'UI UX pour le développement de jeux et j'ai appris a utiliser certains outils comme Photoshop.",
+    "2": "Appris durant mon année d' application Web à l' EPFL sur 5 projets , j'ai appris a travailler en equipe, utiliser les ressources nécessaires, rechercher correctement ainsi comment résoudre des problèmes liés au développement.",
+    "3": "Mes deux années d'expériences en tant que négociateur immobilier m'ont appris a communiquez avec les équipes pour la prospection, travailler avec différents corps de métier, aider les autres négociateurs, mis en places des outils pour les équipes.",
+    "4": "Durant mes 3 années de bachelor en Game Design j'ai travaillé obligatoirement en groupe de 4, avec un lead qui changeais pour chaque projets.",
+    "5": "Parce que le smartphone est devenu notre premier écran, un site Web optimisé pour les mobiles est l'une des meilleures pratiques en marketing numérique. C'est la première chose que j'ai apprise pendant mes études."
+  },
+  "Skills": {
+    "1": "Mes compétences"
+  },
+  "Contact": {
+    "1": "Contactez moi",
+    "2": "Prénom",
+    "3": "Votre message",
+    "4": "Envoyez"
   }
 }
