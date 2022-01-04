@@ -16,7 +16,9 @@ const allPortfolio = [
         projectGoal1: 'Front-end and back-end',
         projectGoal2: 'Third party software and services',
         projectGoal3: 'General programming techniques',
-        projectGoal4: 'General programming techniques'
+        projectGoal4: 'General programming techniques',
+        clickLink: "Cliquez ici pour visualiser cette application",
+        clickGit: "Cliquez ici pour visualiser ce projet sur Github"
       },
       en: {
         title: 'Chablais Property',
@@ -27,7 +29,9 @@ const allPortfolio = [
         projectGoal1: 'Front-end and back-end',
         projectGoal2: 'Third party software and services',
         projectGoal3: 'General programming techniques',
-        projectGoal4: 'General programming techniques'
+        projectGoal4: 'General programming techniques',
+        clickLink: 'Click here to view this app',
+        clickGit: 'Click here to view this project on GitHub'
       }
     }
   }, {
@@ -115,7 +119,7 @@ const allPortfolio = [
         description: "Le site Web est en HTML, CSS et avec des images statiques ; mon travail consistait à faire fonctionner ces pages Web statiques de manière dynamique avec différentes techniques JavaScript.",
         firstTitleModal: 'Aperçu du projet',
         firstDescription: "L'objectif du site est de permettre aux visiteurs de visualiser les accessoires vestimentaires par catégorie (chapeaux, gants, chaussettes et lunettes de soleil), de filtrer par couleur, puis d'ajouter des articles à leur panier. La liste de souhaits peut ensuite être consultée et des éléments peuvent être supprimés de la liste de souhaits",
-        projectGoal: 'Objectifs du projet'
+        projectGoal: 'Objectifs du projet',
       },
       en: {
         title: 'Project 2 Javascript',
@@ -123,7 +127,7 @@ const allPortfolio = [
         formation: 'School',
         firstTitleModal: 'Project overview',
         firstDescription: 'The aim of the site is to allows visitors to view clothing accessories by category (hats, gloves, socks, and sunglasses), filter by color, and then add up to three items to their own wishlist. The wishlist can then be viewed, and items can be removed from the wishlist.',
-        projectGoal: 'Project goals'
+        projectGoal: 'Project goals',
       }
     }
   }, {
