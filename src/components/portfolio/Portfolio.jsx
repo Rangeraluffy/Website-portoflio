@@ -46,9 +46,6 @@ export default function Portfolio() {
     }, {
       id: 'personal',
       title: 'Personnal Project'
-    }, {
-      id: 'web',
-      title: 'Web application'
     }
   ], []);
 

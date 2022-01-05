@@ -4,7 +4,7 @@ import React, {useEffect, useRef} from 'react';
 import {useTranslation} from 'react-i18next';
 
 export default function Intro() {
-  const {t, i18n} = useTranslation();
+  const {t} = useTranslation();
   const textRef = useRef();
 
   useEffect(() => {
@@ -14,9 +14,8 @@ export default function Intro() {
       backSpeed: 40,
       strings: [
         'Meticulous',
-        'Independent',
         'Pragmatic',
-        'Enthusiast',
+        'Enthusiastic',
         'Passionate',
         'Autonomous'
       ]

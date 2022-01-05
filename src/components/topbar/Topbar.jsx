@@ -1,11 +1,11 @@
 import {useCallback} from 'react';
 import './topbar.scss';
-import {Person, Mail} from '@material-ui/icons/';
+import {Mail} from '@material-ui/icons/';
 import {useTranslation} from 'react-i18next';
 import i18next from 'i18next';
 
 export default function Topbar({menuOpen, setMenuOpen}) {
-  const {t, i18n} = useTranslation();
+  const {i18n} = useTranslation();
 
   const handleClick = useCallback((lang) => {
     i18n.changeLanguage(lang);

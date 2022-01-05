@@ -1,6 +1,5 @@
 import './about.scss';
-import {init} from 'ityped';
-import React, {useRef} from 'react';
+import React from 'react';
 import {useTranslation} from 'react-i18next';
 
 export default function About() {

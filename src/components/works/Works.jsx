@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import React from 'react';
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
@@ -21,10 +21,7 @@ library.add(faStarRegular);
 
 export default function Works() {
   const {t} = useTranslation();
-  const alignCenter = {
-    display: 'flex',
-    alignItems: 'center'
-  };
+  
   return (<div className="skills" id="skills">
     <h1 className="title">{t('Skills.1')}</h1>
     <div className="section">
