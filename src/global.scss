@@ -1,36 +1,27 @@
-$mainColor : white;
-$secondColor: #111;
-$whiteColor: black;
-$taupe : #392E2C;
-$background: #D5CABC;
-$salmon-color: #C8574D;
-$text-color: #560905;
-
+$blue-menu: #0B162C;
+$background: #FFFFFF;
+$light-blue-color: #3B556D;
+$text-color: #0B162C;
+$hover-button: #427AA1;
 $width: 768px;
 $width_computer: 1224px;
-$width_phone: 1380px;
-
-
-//  Education
+$width_phone: 1380px; //  Education
 $margin: 20px;
 $spacing: 20px;
 $content-width: calc(40vw - 84px);
 $bdrs: 6px;
-
 @mixin mobile {
-    @media (max-width: #{$width}){
-        @content
-    }
+  @media (max-width: #{$width}) {
+    @content
+  }
 }
-
 @mixin computer {
-    @media (max-width: #{$width_computer}){
-        @content
-    }
+  @media (max-width: #{$width_computer}) {
+    @content
+  }
 }
-
 @mixin tablet {
-    @media (max-width: #{$width_phone}){
-        @content
-    }
+  @media (max-width: #{$width_phone}) {
+    @content
+  }
 }

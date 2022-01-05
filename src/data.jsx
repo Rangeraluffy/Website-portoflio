@@ -80,17 +80,17 @@ const allPortfolio = [
     languages: {
       fr: {
         title: 'Personnel Portfolio',
-        description: 'Je suis en francais',
+        description: "Mon portfolio a été réalisé par moi même. J'ai appris a utilisé react avec des vidéos, les ressources sur internet. Il était important pour moi d'avoir un portfolio pour vous montrer mes projets.",
         firstTitleModal: 'Aperçu du projet',
-        firstDescription: 'Je suis en francais',
+        firstDescription: "Ceci est mon portfolio personnel, au début j'ai commencé à créer mon portfolio en HTML, CSS et Javascript. Je l'ai fait 3 fois sous différentes formes. Mais avec plus de réflexion, j'ai décidé de m'imposer un nouveau challenge, celui-ci étant de réaliser mon portfolio sur une nouvelle technologie que je ne connaissais pas. Je n'étais pas sûr de travailler sur React ou Angular. Et j'ai décidé de travailler sur React.",
         // clickLink: "Cliquez ici pour visualiser cette application",
         clickGit: "Cliquez ici pour visualiser ce projet sur Github"
       },
       en: {
         title: 'Personnal Portfolio',
-        description: 'This is a personal project carried out in the evening on my free time to improve my CSS skills. This project was developed by Alexandre Marolleau.',
+        description: "My portfolio was did by myself i learned with internet and some video. It was important for me to have a portfolio to show you my projects.",
         firstTitleModal: 'Project overview',
-        firstDescription: 'The HTML was already present in the code the principle being with the images provided in the file to simply make the whole website in CSS without touching the HTML.',
+        firstDescription: "This is my personal portfolio, at the beginning I start to create my portfolio in HTML , CSS and Javascript. I did it 3 times in different shape. But with more thought, I decided to set myself a new challenge, this one being to achieve my portfolio on a new technology than i didn't know. I was be unsure to work on React or Angular. And i decided to work on React.",
         // clickLink: 'Click here to view this app',
         clickGit: 'Click here to view this project on GitHub'
       }

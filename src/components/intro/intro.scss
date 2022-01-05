@@ -3,13 +3,11 @@
 .intro {
   background-color: $background;
   display: flex;
-
-  @include mobile{
+  @include mobile {
     flex-direction: column;
     align-items: center;
   }
-
-  @include computer{
+  @include computer {
     flex-direction: column;
     align-items: center;
   }
@@ -25,12 +23,10 @@
       align-items: flex-end;
       justify-content: center;
       float: right;
-
-      @include mobile{
+      @include mobile {
         align-items: flex-start;
       }
-
-      @include computer{
+      @include computer {
         align-items: flex-start;
         width: 100%;
         height: 100%;
@@ -38,17 +34,16 @@
 
       img {
         height: 90%;
-
-        @include mobile{
+        @include mobile {
           height: 100%;
         }
-
-        @include computer{
+        @include computer {
           height: 100%;
         }
       }
     }
   }
+
   .right {
     flex: 0.5;
     position: relative;
@@ -60,8 +55,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-
-      @include mobile{
+      @include mobile {
         padding-left: 0;
         align-items: center;
       }
@@ -70,26 +64,26 @@
         font-size: 60px;
         color: $text-color;
         margin: 10px 0;
-
-        @include mobile{
+        @include mobile {
           font-size: 40px;
         }
       }
+
       h2 {
         font-size: 35px;
         color: $text-color;
       }
+
       h3 {
         font-size: 30px;
         color: $text-color;
-
-        @include mobile{
+        @include mobile {
           font-size: 20px;
         }
 
         span {
           font-size: inherit;
-          color: $salmon-color;
+          color: $light-blue-color;
           padding-left: 15px;
           text-transform: uppercase;
         }
@@ -97,17 +91,18 @@
         .ityped-cursor {
           animation: blink 1s infinite;
         }
-
         @keyframes blink {
-            50%{
-                opacity: 1;
-            }
-            100%{
-                opacity: 0;
-            }
+          50% {
+            opacity: 1;
+          }
+
+          100% {
+            opacity: 0;
+          }
         }
       }
     }
+
     a {
       position: absolute;
       bottom: 10px;
@@ -116,7 +111,7 @@
       img {
         width: 70px;
         animation: arrowBlink 2s infinite;
-        color: $salmon-color;
+        color: $light-blue-color;
       }
       @keyframes arrowBlink {
         100% {

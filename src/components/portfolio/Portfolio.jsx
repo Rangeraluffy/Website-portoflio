@@ -1,36 +1,29 @@
-
-import React, { useEffect, useState, useMemo, useCallback } from 'react';
+import React, {useEffect, useState, useMemo, useCallback} from 'react';
 import './portfolio.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import { useTranslation } from 'react-i18next';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faTimes} from '@fortawesome/free-solid-svg-icons';
+import {useTranslation} from 'react-i18next';
 import PortfolioList from '../portfolioList/PortfolioList';
 import allPortfolio from '../../data';
 
 export default function Portfolio() {
-  const { i18n } = useTranslation();
+  const {i18n} = useTranslation();
 
-  const [portfolioModalState, setPortfolioModalState] = useState({
-    open: false,
-    data: null
-  });
+  const [portfolioModalState, setPortfolioModalState] = useState({open: false, data: null});
 
-  const togglePortfolio = useCallback(
-    (data) => {
-      setPortfolioModalState({ open: !portfolioModalState.open, data });
-    },
-    [setPortfolioModalState, portfolioModalState.open]
-  );
+  const togglePortfolio = useCallback((data) => {
+    setPortfolioModalState({
+      open: !portfolioModalState.open,
+      data
+    });
+  }, [setPortfolioModalState, portfolioModalState.open]);
 
   const openPortfolioModal = useCallback((data) => {
-    setPortfolioModalState({ open: true, data });
+    setPortfolioModalState({open: true, data});
   }, []);
 
   const closePortfolioModal = useCallback(() => {
-    setPortfolioModalState({
-      open: false,
-      data: null
-    });
+    setPortfolioModalState({open: false, data: null});
   }, []);
 
   useEffect(() => {
@@ -43,27 +36,21 @@ export default function Portfolio() {
 
   const [selected, setSelected] = useState('all');
   const [data, setData] = useState([]);
-  const menuData = useMemo(
-    () => [
-      {
-        id: 'all',
-        title: 'All'
-      },
-      {
-        id: 'school',
-        title: 'School Project'
-      },
-      {
-        id: 'personal',
-        title: 'Personnal Project'
-      },
-      {
-        id: 'web',
-        title: 'Web application'
-      }
-    ],
-    []
-  );
+  const menuData = useMemo(() => [
+    {
+      id: 'all',
+      title: 'All'
+    }, {
+      id: 'school',
+      title: 'School Project'
+    }, {
+      id: 'personal',
+      title: 'Personnal Project'
+    }, {
+      id: 'web',
+      title: 'Web application'
+    }
+  ], []);
 
   useEffect(() => {
     if (selected === 'all') {
@@ -73,24 +60,16 @@ export default function Portfolio() {
     }
   }, [selected]);
 
-  return (
-    <div className="portfolio" id="portfolio">
-      <h1 className="title">Portfolio</h1>
-      <ul>
-        {menuData.map((menuItem) => (
-          <PortfolioList
-            key={`portfolio-list-${menuItem.id}`}
-            title={menuItem.title}
-            active={selected === menuItem.id}
-            setSelected={setSelected}
-            id={menuItem.id}
-          />
-        ))}
-      </ul>
+  return (<div className="portfolio" id="portfolio">
+    <h1 className="title">Portfolio</h1>
+    <ul>
+      {menuData.map((menuItem) => (<PortfolioList key={`portfolio-list-${menuItem.id}`} title={menuItem.title} active={selected === menuItem.id} setSelected={setSelected} id={menuItem.id}/>))}
+    </ul>
 
-      {portfolioModalState.open ? (
-        <div className="modal_portfolio">
-          <div onClick={closePortfolioModal} className="overlay" />
+    {
+      portfolioModalState.open
+        ? (<div className="modal_portfolio">
+          <div onClick={closePortfolioModal} className="overlay"/>
           <div className="modal_content">
             <div className="modal_details">
               <h1>{portfolioModalState.data.languages[i18n.language].title}</h1>
@@ -104,34 +83,30 @@ export default function Portfolio() {
             <h1>{portfolioModalState.data.languages[i18n.language].firstTitleModal}</h1>
             <p className="modal_text">
               {portfolioModalState.data.languages[i18n.language].firstDescription}
-            </p>    
+            </p>
             <button type="button" className="close_modal" onClick={togglePortfolio}>
-              <FontAwesomeIcon icon={faTimes} />
+              <FontAwesomeIcon icon={faTimes}/>
             </button>
           </div>
-        </div>
-      ) : null}
-      <div className="container2">
-        {data.map((d) => (
-          <div key={`data-portfolio-${d.id}`} className="card_portfolio">
-            <h1 className="title_portfolio">{d.languages[i18n.language].title}</h1>
-            <div className="cta-links">
-              <button
-                type="button"
-                onClick={() => {
-                  openPortfolioModal(d);
-                }}
-                className="btn-portfolio"
-              >
-                En savoir plus
-              </button>
-              <p className="tools">{d.tools}</p>
-            </div>
-
-            <img src={d.img} alt="" />
+        </div>)
+        : null
+    }
+    <div className="container2">
+      {
+        data.map((d) => (<div key={`data-portfolio-${d.id}`} className="card_portfolio">
+          <h1 className="title_portfolio">{d.languages[i18n.language].title}</h1>
+          <div className="cta-links">
+            <button type="button" onClick={() => {
+                openPortfolioModal(d);
+              }} className="btn-portfolio">
+              En savoir plus
+            </button>
+            <p className="tools">{d.tools}</p>
           </div>
-        ))}
-      </div>
+
+          <img src={d.img} alt=""/>
+        </div>))
+      }
     </div>
-  );
+  </div>);
 }

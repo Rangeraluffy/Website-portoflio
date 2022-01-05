@@ -1,10 +1,10 @@
 import './intro.scss';
-import { init } from 'ityped';
-import React, { useEffect, useRef } from 'react';
-import { useTranslation } from 'react-i18next';
+import {init} from 'ityped';
+import React, {useEffect, useRef} from 'react';
+import {useTranslation} from 'react-i18next';
 
 export default function Intro() {
-  const { t, i18n } = useTranslation();
+  const {t, i18n} = useTranslation();
   const textRef = useRef();
 
   useEffect(() => {
@@ -12,7 +12,14 @@ export default function Intro() {
       showCursor: true,
       backDelay: 2500,
       backSpeed: 40,
-      strings: ['Meticulous', 'Independent', 'Pragmatic', 'Enthusiast', 'Passionate', 'Autonomous']
+      strings: [
+        'Meticulous',
+        'Independent',
+        'Pragmatic',
+        'Enthusiast',
+        'Passionate',
+        'Autonomous'
+      ]
     });
   }, []);
 
@@ -27,28 +34,26 @@ export default function Intro() {
     });
   }, []);
 
-  return (
-    <div className="intro" id="intro">
-      <div className="left">
-        <div className="imgContainer">
-          <img src="assets/profil.png" alt="" />
-        </div>
-      </div>
-      <div className="right">
-        <div className="wrapper">
-          <h2>{t('Intro.1')}</h2>
-          <h1>Alexandre Marolleau</h1>
-          <h3>
-            {t('Intro.2')}<span ref={textRef} />
-          </h3>
-          <h3>
-            {t('Intro.3')}<span ref={textRef2} />
-          </h3>
-        </div>
-        <a href="#contact">
-          <img src="assets/down.png" alt="" />
-        </a>
+  return (<div className="intro" id="intro">
+    <div className="left">
+      <div className="imgContainer">
+        <img src="assets/profil.png" alt=""/>
       </div>
     </div>
-  );
+    <div className="right">
+      <div className="wrapper">
+        <h2>{t('Intro.1')}</h2>
+        <h1>Alexandre Marolleau</h1>
+        <h3>
+          {t('Intro.2')}<span ref={textRef}/>
+        </h3>
+        <h3>
+          {t('Intro.3')}<span ref={textRef2}/>
+        </h3>
+      </div>
+      <a href="#contact">
+        <img src="assets/down.png" alt=""/>
+      </a>
+    </div>
+  </div>);
 }

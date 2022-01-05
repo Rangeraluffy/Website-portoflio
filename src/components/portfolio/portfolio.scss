@@ -95,7 +95,7 @@
   margin-right: 50px;
   display: block;
   font-size: 18px;
-  background-color: $salmon-color;
+  background-color: $light-blue-color;
   color: white;
   border-radius: 15px;
   border: none;
@@ -135,7 +135,6 @@
   border-radius: 3px;
   width: 65%;
 
-
   h1 {
     font-size: 2.5rem;
     text-align: center;
@@ -146,7 +145,7 @@
 .modal_details {
   text-align: center;
   padding-bottom: 2rem;
-  border-bottom: 1px solid $taupe;
+  border-bottom: 1px solid $blue-menu;
   @include mobile {
     padding-bottom: 1rem;
   }
@@ -160,7 +159,7 @@
   }
 
   h2 {
-    color: $salmon-color;
+    color: $light-blue-color;
     font-size: 1.5rem;
     padding-top: 10px;
   }
@@ -177,7 +176,7 @@
 
   a {
     font-weight: 500;
-    color: $salmon-color;
+    color: $light-blue-color;
     font-size: 1.2rem;
     cursor: pointer;
     text-transform: uppercase;
@@ -190,7 +189,7 @@
 }
 
 .modal_description {
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 1.6rem;
 }
 

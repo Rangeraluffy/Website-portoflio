@@ -5,48 +5,51 @@
 }
 
 form {
-  max-width:420px;
-  margin:150px auto;
+  max-width: 420px;
+  margin: 150px auto;
   text-align: center;
   align-items: center;
 }
 
 .feedback-input {
-  color:$secondColor;
-  font-weight:500;
+  font-weight: 500;
   font-size: 18px;
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid $secondColor;
+  border: 2px solid $light-blue-color;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
-  width:100%;
+  width: 100%;
   box-sizing: border-box;
-  outline:0;
+  outline: 0;
 }
 
-.feedback-input:focus { border:2px solid $salmon-color; }
+.feedback-input:focus {
+  border: 2px solid $light-blue-color;
+}
 
 textarea {
   height: 150px;
   line-height: 150%;
-  resize:vertical;
+  resize: vertical;
 }
 
 [type="submit"] {
   width: 100%;
-  background:$salmon-color;
-  border-radius:5px;
-  border:0;
-  cursor:pointer;
-  color:$mainColor;
-  font-size:24px;
-  padding-top:10px;
-  padding-bottom:10px;
+  background: $light-blue-color;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
+  margin-top: -4px;
+  font-weight: 700;
 }
-[type="submit"]:hover { background:$taupe; }
+
+[type="submit"]:hover {
+  background: $blue-menu;
+}

@@ -8,12 +8,10 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-
-    @include mobile{
+    @include mobile {
       width: 100%;
     }
-
-    @include computer{
+    @include computer {
       width: 100%;
     }
   }

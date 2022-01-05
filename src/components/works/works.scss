@@ -1,9 +1,10 @@
 @import "../../global.scss";
 
-.skills{
+.skills {
   background-color: $background;
 }
-h1{
+
+h1 {
   font-size: 50px;
   text-align: center;
   padding-bottom: 50px;
@@ -16,6 +17,7 @@ h1{
   justify-content: center;
   padding-left: 75px;
 }
+
 .wall {
   display: flex;
 }
@@ -23,19 +25,24 @@ h1{
 .v-boxes {
   display: flex;
   flex-direction: column;
-  &:not(:first-child){
+
+  &:not(:first-child) {
     margin-left: -75px;
   }
 }
+
 .second {
   margin-top: 75px;
 }
+
 .third {
   margin-top: 150px;
 }
+
 .forth {
   margin-top: 225px;
 }
+
 .box {
   width: 100px;
   height: 100px;
@@ -45,20 +52,26 @@ h1{
   transform: rotate(45deg);
   margin: 25px;
   cursor: pointer;
-  &:hover{
-   &:not(.link) > .box-face, > .box-back {
-     transform: translateZ(100px) rotateX(180deg);
-     background-color: transparent!important;
+
+  &:hover {
+    > .box-back,
+    &:not(.link) > .box-face {
+      transform: translateZ(100px) rotateX(180deg);
+      background-color: transparent!important;
     }
+
     &:not(.link) > .box-face > .box-text {
       opacity: 0;
     }
+
     & .tooltip {
       visibility: visible;
       opacity: 1;
     }
+
     &.link > .box-face {
       background-color: transparent!important;
+
       & > .box-text {
         color: #323232;
       }
@@ -70,23 +83,25 @@ h1{
       background-color: #323232;
       border: 1px solid #323232;
       box-sizing: border-box;
-      transition: background-color .5s;
+      transition: background-color 0.5s;
     }
+
     & .box-text {
       color: #efefef;
-      transition: color .5s;
+      transition: color 0.5s;
     }
   }
 }
 
-.box-face, .box-back {
+.box-back,
+.box-face {
   cursor: pointer;
   position: absolute;
-  top:0;
-  z-index:1;
+  top: 0;
+  z-index: 1;
   width: 100px;
   height: 100px;
-  background-color: $taupe;
+  background-color: $blue-menu;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -94,7 +109,7 @@ h1{
   transform-style: preserver-3d;
   -webkit-transform-style: preserver-3d;
   -moz-transform-style: preserver-3d;
-  transition: transform 1s, background-color 0s .3s;
+  transition: transform 1s, background-color 0s 0.3s;
 }
 
 .box-face .box-text {
@@ -107,7 +122,7 @@ h1{
   -ms-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
   transform: rotate(-135deg);
-  transition: opacity 0s linear .3s;
+  transition: opacity 0s linear 0.3s;
 }
 
 .box-back .box-text {
@@ -121,7 +136,7 @@ h1{
   -ms-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   transform: rotate(-135deg) rotateY(180deg);
-  transition: opacity 0s linear .3s;
+  transition: opacity 0s linear 0.3s;
 }
 
 a {
@@ -129,13 +144,9 @@ a {
   text-decoration: none;
 }
 
-.box-text{
-  fill: white;
-}
-
 .box-back {
-  z-index:0;
-  background-image: linear-gradient( #fff, #efefef);
+  z-index: 0;
+  background-image: linear-gradient(#fff, #efefef);
 }
 
 .box-text img {
@@ -143,7 +154,7 @@ a {
   max-height: 32px;
   -webkit-filter: grayscale(100%) saturate(0);
   filter: grayscale(100%) saturate(0);
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .tooltip {
@@ -163,14 +174,14 @@ a {
   -ms-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  transition: visibility 0s linear .3s, opacity 1s linear .3s;
+  transition: visibility 0s linear 0.3s, opacity 1s linear 0.3s;
 }
 
 .tooltip:after {
   position: absolute;
   top: -5px;
   left: 35px;
-  content:' ';
+  content: ' ';
   width: 0;
   height: 0;
   border-left: 5px solid transparent;

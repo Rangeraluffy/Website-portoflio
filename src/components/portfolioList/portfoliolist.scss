@@ -13,14 +13,12 @@
     color: $text-color;
     text-transform: uppercase;
   }
-
-
-  @include mobile{
-  margin: 0;
+  @include mobile {
+    margin: 0;
   }
 
-  &.active{
-    background-color: $salmon-color;
+  &.active {
+    background-color: $light-blue-color;
     text-decoration: none;
 
     a {
