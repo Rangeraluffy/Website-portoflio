@@ -23,7 +23,7 @@ export default function About() {
               <p>
                 {t('About.4')}.
               </p>
-              <a href="/assets/CV_Alexandre_Marolleau_EN.pdf" target="_blank">Download CV</a>
+              <a href="/assets/CV_Alexandre_Marolleau_EN.pdf" target="_blank">{t('About.5')}</a>
             </div>
           </div>
         </div>

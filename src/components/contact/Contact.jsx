@@ -27,11 +27,10 @@ export default function Contact() {
   return (
     <div className="contact">
       <h1 className="title">{t('Contact.1')}</h1>
-
       <div className="container" id="contact">
         <form onSubmit={sendEmail}>
           <input name="name" type="text" className="feedback-input" placeholder={t('Contact.2')} required />
-          <input name="email" type="text" className="feedback-input" placeholder="Email" required />
+          <input name="email" type="email" className="feedback-input" placeholder="Email" required />
           <textarea name="message" className="feedback-input" placeholder={t('Contact.3')} required/>
           <input type="submit" value={t('Contact.4')} />
         </form>

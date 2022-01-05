@@ -10,19 +10,21 @@
   },
   "About": {
     "1": "About me",
-    "2": "I'm Alexandre and I",
+    "2": "I'm Alexandre and I am",
     "3": "looking for a new Job",
-    "4": "Hello there my Name is Alexandre Marolleau I am 26 years. Originaly from Haute-Savoie I looking a new opportunity in Web developmen.Holder of a Bachelor in Game Design acquired at Bellecour Ecole (Lyon – France), Recently graduated at the Ecole Polytechnique Fédérale de Lausanne (EPFL) Extension School with a specialisation in web development application to obtain my Certificate of Open Studies (COS)"
+    "4": "Hello there my name is Alexandre Marolleau I am 26 years old. Originally from Haute-Savoie I am looking for an opportunity to start my carreer in Web Development. I have started my studies in Game Design and obtained a Bachelor at Bellecour Ecole (Lyon – France). I am recently graduated with a Certificate of Open Studies (COS) from the Ecole Polytechnique Fédérale de Lausanne (EPFL) Extension School",
+    "5": "Download my CV"
   },
   "Teams": {
     "1": "Web design are a quality for me in Game design i used a lot UI UX for game development and use some tools like photoshop. So i have a good perception to create a design.",
     "2": "Learned during my years of Web application with the EPFL , on 5 project , how to start how to think, how to solve some problems.",
     "3": "Professional team working with my experiences in Real Estate. Communicate with the team about property to sell , prospecting in team , help others sellers on difficult contract.",
     "4": "Working with team during my 3 years of Bachelor Game design with a lead on all project.",
-    "5": "Because the smartphone has become our first screen, a mobile-optimized website is one of the best practices in digital marketing. This is the first thing i learned during my studies."
+    "5": "Because the smartphone has become our first screen, a mobile-optimized website is one of the best practices in digital marketing. This is the first thing i learned during my studies.",
+    "6": "Soft Skills"
   },
   "Skills": {
-    "1": "Skills"
+    "1": "Programming Skills"
   },
   "Contact": {
     "1": "Contact",
