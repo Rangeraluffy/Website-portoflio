@@ -69,13 +69,13 @@ export default function Portfolio() {
           <div onClick={closePortfolioModal} className="overlay"/>
           <div className="modal_content">
             <div className="modal_details">
-              <h1>{portfolioModalState.data.languages[i18n.language].title}</h1>
+              <h1>{portfolioModalState.data.title}</h1>
               <h2>{portfolioModalState.data.github}</h2>
-              <a href={portfolioModalState.data.url} target="_blank">{portfolioModalState.data.languages[i18n.language].clickLink}</a>
+              <a href={portfolioModalState.data.url} target="_blank" rel="noopener noreferrer">{portfolioModalState.data.languages[i18n.language].clickLink}</a>
               <p className="modal_description">
                 {portfolioModalState.data.languages[i18n.language].description}
               </p>
-              <a href={portfolioModalState.data.gitHub} target="_blank">{portfolioModalState.data.languages[i18n.language].clickGit}</a>
+              <a href={portfolioModalState.data.gitHub} target="_blank" rel="noopener noreferrer">{portfolioModalState.data.languages[i18n.language].clickGit}</a>
             </div>
             <h1>{portfolioModalState.data.languages[i18n.language].firstTitleModal}</h1>
             <p className="modal_text">
@@ -91,7 +91,7 @@ export default function Portfolio() {
     <div className="container2">
       {
         data.map((d) => (<div key={`data-portfolio-${d.id}`} className="card_portfolio">
-          <h1 className="title_portfolio">{d.languages[i18n.language].title}</h1>
+          <h1 className="title_portfolio">{d.title}</h1>
           <div className="cta-links">
             <button type="button" onClick={() => {
                 openPortfolioModal(d);
