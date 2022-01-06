@@ -4,6 +4,12 @@
   background-color: $background;
 }
 
+.title{
+  @include mobileS {
+    font-size: 1.6rem;
+  }
+}
+
 h1 {
   font-size: 50px;
   text-align: center;
@@ -20,27 +26,45 @@ h1 {
 
 .wall {
   display: flex;
+  @include mobileS {
+    display: inline;
+  }
 }
 
 .v-boxes {
   display: flex;
   flex-direction: column;
+  @include mobileS {
+    padding-right: 70px;
+  }
 
   &:not(:first-child) {
     margin-left: -75px;
+    @include mobileS {
+      margin-left: 0;
+    }
   }
 }
 
 .second {
   margin-top: 75px;
+  @include mobileS {
+    margin-top: 0;
+  }
 }
 
 .third {
   margin-top: 150px;
+  @include mobileS {
+    margin-top: 0;
+  }
 }
 
 .forth {
   margin-top: 225px;
+  @include mobileS {
+    margin-top: 0;
+  }
 }
 
 .box {
@@ -54,8 +78,8 @@ h1 {
   cursor: pointer;
 
   &:hover {
-    > .box-back,
-    &:not(.link) > .box-face {
+    &:not(.link) > .box-face,
+    > .box-back {
       transform: translateZ(100px) rotateX(180deg);
       background-color: transparent!important;
     }

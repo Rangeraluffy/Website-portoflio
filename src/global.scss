@@ -6,6 +6,7 @@ $hover-button: #427AA1;
 $width: 768px;
 $width_computer: 1224px;
 $width_phone: 1380px; //  Education
+$width_mobileS: 425px;
 $margin: 20px;
 $spacing: 20px;
 $content-width: calc(40vw - 84px);
@@ -22,6 +23,11 @@ $bdrs: 6px;
 }
 @mixin tablet {
   @media (max-width: #{$width_phone}) {
+    @content
+  }
+}
+@mixin mobileS {
+  @media (max-width: #{$width_mobileS}) {
     @content
   }
 }

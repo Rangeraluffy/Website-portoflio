@@ -1,1 +1,1 @@
-.teams{box-sizing:border-box}.teams img{display:block;margin-left:auto;margin-right:auto;width:50%}@media (max-width: 768px){.teams img{width:100%}}@media (max-width: 1224px){.teams img{width:100%}}
+.teams{box-sizing:border-box}@media (max-width: 425px){.teams .title{font-size:1.6rem}}.teams img{display:block;margin-left:auto;margin-right:auto;width:50%}@media (max-width: 768px){.teams img{width:100%}}@media (max-width: 1224px){.teams img{width:100%}}

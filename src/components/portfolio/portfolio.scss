@@ -10,6 +10,11 @@
     color: $text-color;
     text-transform: uppercase;
     font-weight: 500;
+
+    @include mobileS {
+      padding-top: 10px;
+      font-size: 15px;
+    }
   }
 
   p {
@@ -19,6 +24,9 @@
   h1 {
     font-size: 50px;
     color: $text-color;
+    @include mobileS {
+      font-size: 30px;
+    }
   }
 
   ul {
@@ -52,6 +60,10 @@
   .title_portfolio {
     padding-bottom: 15px;
     text-transform: uppercase;
+
+    @include mobileS {
+      font-size: 1.3rem;
+    }
   }
 
   .formation_portfolio {
@@ -87,6 +99,11 @@
       cursor: pointer;
       padding-right: 2%;
     }
+
+    @include mobileS {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
@@ -106,6 +123,10 @@
     color: white;
     background: $hover-button;
     text-decoration: none;
+  }
+  @include mobileS {
+    margin-right: 0;
+    font-size: 13px;
   }
 }
 
@@ -139,7 +160,12 @@
     font-size: 2.5rem;
     text-align: center;
     padding: 25px 0;
+    @include mobileS {
+      font-size: 1.5rem;
+      padding: 0;
+    }
   }
+
 }
 
 .modal_details {
@@ -149,12 +175,15 @@
   @include mobile {
     padding-bottom: 1rem;
   }
+  @include mobileS {
+    padding-bottom: 0;
+  }
 
   h1 {
     font-size: 3.2rem;
     padding: 0;
     @include mobile {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 
@@ -162,6 +191,10 @@
     color: $light-blue-color;
     font-size: 1.5rem;
     padding-top: 10px;
+    @include mobileS {
+      font-size: 1rem;
+      padding: 0;
+    }
   }
 
   p {
@@ -181,6 +214,10 @@
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 800;
+
+    @include mobileS {
+      font-size: 1rem;
+    }
   }
 }
 

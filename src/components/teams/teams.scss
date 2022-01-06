@@ -2,6 +2,12 @@
 
 .teams {
   box-sizing: border-box;
+.title{
+  @include mobileS {
+    font-size: 1.6rem;
+  }
+}
+
 
   img {
     display: block;
