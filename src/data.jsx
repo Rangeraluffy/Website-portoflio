@@ -6,7 +6,7 @@ const allPortfolio = [
     img: 'assets/property.png',
     tools: 'Ruby On Rails',
     url: 'https://chablais-property.herokuapp.com/',
-    gitHub: 'https://github.com/Rangeraluffy/capstone-project-wad-c5-s2-4493-2439',
+    gitHub: 'https://github.com/Rangeraluffy/Chablais-property',
     languages: {
       fr: {
         description: "Il s'agit de mon projet final pour compléter le programme de développement d'applications Web. Mon objectif est de mettre en valeur les connaissances et les compétences que j'ai développées tout au long des quatres cours de ce programme. Celui-ci était la dernière étape pour compléter le programme complet de l'EPFL Extension School. Après une présentation devant un jury, celui ci a été validé et félicité.",
@@ -51,7 +51,7 @@ const allPortfolio = [
     img: 'assets/pro_tips.png',
     tools: 'Ruby On Rails',
     url: 'https://sheltered-tor-87333.herokuapp.com',
-    gitHub: 'https://github.com/Rangeraluffy/project-wad-c4-s10-4493-2439',
+    gitHub: 'https://github.com/Rangeraluffy/Pro_tips',
     languages: {
       fr: {
         description: "Il s'agit du projet du cours Applications Web dynamiques. Le quatrième projet du cours de l'EPFL Extension School.",
@@ -97,7 +97,7 @@ const allPortfolio = [
     category: 'school',
     img: 'assets/javascript_project.png',
     tools: 'Javascript',
-    gitHub: 'https://github.com/Rangeraluffy/project-wad-c2-s4-4493-2439',
+    gitHub: 'https://github.com/Rangeraluffy/Javascript_Clothing',
     languages: {
       fr: {
         description: "Le site Web est en HTML, CSS et avec des images statiques, mon travail consistait à faire fonctionner ces pages Web statiques de manière dynamique avec différentes techniques JavaScript.",
@@ -119,7 +119,7 @@ const allPortfolio = [
     category: 'school',
     img: 'assets/pinterest.png',
     tools: 'Javascript',
-    gitHub: 'https://github.com/Rangeraluffy/project-wad-c3-s10-4493-2439',
+    gitHub: 'https://github.com/Rangeraluffy/Pinterest',
     languages: {
       fr: {
         description: "Il s'agit du projet du cours d'introduction à Ruby On rails. Le troisième projet du cours de l'EPFL Extension School.",

@@ -6,7 +6,8 @@
   },
   "Menu": {
     "1": "About me",
-    "2": "Skills"
+    "2": "Soft Skills",
+    "3": "Programming Skills"
   },
   "About": {
     "1": "About me",
@@ -20,11 +21,7 @@
     "2": "Learned during my years of Web application with the EPFL , on 5 project , how to start how to think, how to solve some problems.",
     "3": "Professional team working with my experiences in Real Estate. Communicate with the team about property to sell , prospecting in team , help others sellers on difficult contract.",
     "4": "Working with team during my 3 years of Bachelor Game design with a lead on all project.",
-    "5": "Because the smartphone has become our first screen, a mobile-optimized website is one of the best practices in digital marketing. This is the first thing i learned during my studies.",
-    "6": "Soft Skills"
-  },
-  "Skills": {
-    "1": "Programming Skills"
+    "5": "Because the smartphone has become our first screen, a mobile-optimized website is one of the best practices in digital marketing. This is the first thing i learned during my studies."
   },
   "Contact": {
     "1": "Contact",
