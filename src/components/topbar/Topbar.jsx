@@ -2,7 +2,7 @@ import {useCallback} from 'react';
 import './topbar.scss';
 import {Mail} from '@material-ui/icons/';
 import {useTranslation} from 'react-i18next';
-import i18next from 'i18next';
+
 
 export default function Topbar({menuOpen, setMenuOpen}) {
   const {i18n} = useTranslation();

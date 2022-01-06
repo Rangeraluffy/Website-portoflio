@@ -21,7 +21,7 @@ library.add(faStarRegular);
 
 export default function Works() {
   const {t} = useTranslation();
-  
+
   return (<div className="skills" id="skills">
     <h1 className="title">{t('Skills.1')}</h1>
     <div className="section">
@@ -190,7 +190,7 @@ export default function Works() {
             <div className="box link">
               <div className="box-face">
                 <div className="box-text">
-                  <a href="https://github.com/Rangeraluffy" target="_blank">
+                  <a href="https://github.com/Rangeraluffy" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
                   </a>
                 </div>
