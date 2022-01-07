@@ -20,7 +20,7 @@ export default function Topbar({menuOpen, setMenuOpen}) {
         </a>
         <div className="itemContainer">
           <Mail className="icon"/>
-          <span>alexandre.web.dev.74@gmail.com</span>
+          <a href="mailto:alexandre.web.dev.74@gmail.com">alexandre.web.dev.74@gmail.com</a>
         </div>
         <div className="top_bar_langages">
           <button className="btn_top_bar" onClick={() => handleClick('en')}>English</button>

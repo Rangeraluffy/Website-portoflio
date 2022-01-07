@@ -23,7 +23,7 @@ export default function Works() {
   const {t} = useTranslation();
 
   return (<div className="skills" id="skills">
-    <h1 className="title">{t('Skills.1')}</h1>
+    <h1 className="title">{t('Menu.3')}</h1>
     <div className="section">
       <div className="container">
         <div className="wall">
