@@ -6,22 +6,6 @@ import {useTranslation} from 'react-i18next';
 export default function Intro() {
   const {t} = useTranslation();
   const textRef = useRef();
-
-  useEffect(() => {
-    init(textRef.current, {
-      showCursor: true,
-      backDelay: 2500,
-      backSpeed: 40,
-      strings: [
-        'Meticulous',
-        'Pragmatic',
-        'Enthusiastic',
-        'Passionate',
-        'Autonomous'
-      ]
-    });
-  }, []);
-
   const textRef2 = useRef();
 
   useEffect(() => {
