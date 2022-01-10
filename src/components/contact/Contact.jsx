@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import emailjs from 'emailjs-com';
 import './contact.scss';
 import {useTranslation} from 'react-i18next';
@@ -6,6 +6,14 @@ import {useTranslation} from 'react-i18next';
 export default function Contact() {
 
   const {t} = useTranslation();
+
+  const Result =() =>{
+    return(
+      <p>{t('Contact.5')}</p>
+    )
+  }
+
+  const [result,showResult] = useState(false);
 
   function sendEmail(e) {
     e.preventDefault();
@@ -17,6 +25,7 @@ export default function Contact() {
     });
 
     e.target.reset();
+    showResult(true);
   }
 
   return (<div className="contact">
@@ -27,6 +36,7 @@ export default function Contact() {
         <input name="email" type="email" className="feedback-input" placeholder="Email" required="required"/>
         <textarea name="message" className="feedback-input" placeholder={t('Contact.3')} required="required"/>
         <input type="submit" value={t('Contact.4')}/>
+        <div className="show_message">{result ? <Result /> : null}</div>
       </form>
     </div>
   </div>);

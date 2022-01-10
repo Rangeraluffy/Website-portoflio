@@ -29,18 +29,21 @@ const allPortfolio = [
     category: 'personal',
     img: 'assets/covid_website.png',
     tools: 'HTML & CSS',
+    url: 'https://covid-website-eight.vercel.app/',
     gitHub: 'https://github.com/Rangeraluffy/COVID-Website',
     languages: {
       fr: {
         description: "Il s'agit d'un projet personnel réalisé le soir sur mon temps libre pour améliorer mes compétences en CSS pur.",
         firstTitleModal: 'Aperçu du projet',
         firstDescription: 'Le HTML et les images étaient fournis dans le code, le principe étant de faire simplement tout le site en CSS sans toucher au HTML.',
+        clickLink: "Cliquez ici pour visualiser cette application",
         clickGit: "Cliquez ici pour visualiser ce projet sur Github"
       },
       en: {
         description: 'This is a personal project carried out in the evening on my free time to improve my CSS skills.',
         firstTitleModal: 'Project overview',
         firstDescription: 'The HTML and images were already present in the code, the principale was to shape the whole website in CSS.',
+        clickLink: 'Click here to view this app',
         clickGit: 'Click here to view this project on GitHub'
       }
     }
@@ -96,6 +99,7 @@ const allPortfolio = [
     title: 'Project 2 Javascript',
     category: 'school',
     img: 'assets/javascript_project.png',
+    url: 'https://javascript-clothing-jpavr19a9-rangeraluffy.vercel.app/products.html',
     tools: 'Javascript',
     gitHub: 'https://github.com/Rangeraluffy/Javascript_Clothing',
     languages: {
@@ -103,6 +107,7 @@ const allPortfolio = [
         description: "Le site Web est en HTML, CSS et avec des images statiques, mon travail consistait à faire fonctionner ces pages Web statiques de manière dynamique avec différentes techniques JavaScript.",
         firstTitleModal: 'Aperçu du projet',
         firstDescription: "L'objectif du site est de permettre aux visiteurs de visualiser les accessoires vestimentaires par catégorie (chapeaux, gants, chaussettes et lunettes de soleil), de filtrer par couleur, puis d'ajouter des articles à leur panier. La liste de souhaits peut ensuite être consultée et des éléments peuvent être supprimés de la liste de souhaits.",
+        clickLink: "Cliquez ici pour visualiser cette application",
         clickGit: "Cliquez ici pour visualiser ce projet sur Github"
       },
       en: {
@@ -110,6 +115,7 @@ const allPortfolio = [
         formation: 'School',
         firstTitleModal: 'Project overview',
         firstDescription: 'The aim of the site is to allow visitors to view clothing accessories by category (hats, gloves, socks, and sunglasses), filter by color, and then add up to three items to their own wishlist. The wishlist can then be viewed, and items can be removed from the wishlist.',
+        clickLink: 'Click here to view this app',
         clickGit: 'Click here to view this project on GitHub'
       }
     }

@@ -11,7 +11,7 @@
   },
   "About": {
     "1": "À propos de moi",
-    "2": "Je suis Alexandre et je suis",
+    "2": "Je m'apelle Alexandre et je suis",
     "3": "À la recherche d'un nouvel emploi",
     "4": "Bonjour, je m'appelle Alexandre Marolleau j'ai 26 ans. Originaire de Haute-Savoie je suis à la recherche d'une opportunité pour commencer ma carrière dans le Développement Web. J'ai commencé mes études en Game Design et suis titulaire d'un Bachelor acquis à Bellecour Ecole (Lyon – France). Je suis récemment diplômé de l'Ecole Polytechnique Fédérale de Lausanne (EPFL) Extension School avec une spécialisation en Développement d'Applications Web, où j'ai obtenu mon Certificate of Open Studies (COS)",
     "5": "Télécharger mon CV"
@@ -27,6 +27,7 @@
     "1": "Contactez moi",
     "2": "Prénom",
     "3": "Votre message",
-    "4": "Envoyer"
+    "4": "Envoyer",
+    "5": "Votre message a été envoyé avec succès. Je vous contacterai bientôt."
   }
 }
