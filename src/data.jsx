@@ -141,6 +141,32 @@ const allPortfolio = [
         clickGit: 'Click here to view this project on GitHub'
       }
     }
+  },
+  {
+    id: 6,
+    title: 'Chat Application',
+    category: 'personal',
+    img: 'assets/chat_app.png',
+    // url: 'https://javascript-clothing-jpavr19a9-rangeraluffy.vercel.app/products.html',
+    tools: 'Angular',
+    gitHub: 'https://github.com/Rangeraluffy/Chat-application',
+    languages: {
+      fr: {
+        description: "Après avoir réalisé mon portfolio React, j'ai voulu me pencher sur Angular j'ai donc réalisé cette application pour voir la différence de développement entre React et Angular. Work in progress",
+        firstTitleModal: 'Aperçu du projet',
+        firstDescription: "L'objectif de l'application est de pouvoir communiquer entre plusieurs utilisateurs, il suffit d'entrer un nom et de discuter, le serveur est hébergé sur Heroku. Work in progress.",
+        clickLink: "Cliquez ici pour visualiser cette application",
+        clickGit: "Cliquez ici pour visualiser ce projet sur Github"
+      },
+      en: {
+        description: 'After making my React portfolio, I wanted to focus on Angular so I made this application to see the development difference between React and Angular. Work in progress.',
+        formation: 'School',
+        firstTitleModal: 'Project overview',
+        firstDescription: 'The objective of the application is to be able to communicate between several users, just enter a name and chat, the server is hosted on Heroku. Work in progress.',
+        clickLink: 'Click here to view this app',
+        clickGit: 'Click here to view this project on GitHub'
+      }
+    }
   }
 ];
 
