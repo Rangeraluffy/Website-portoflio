@@ -160,9 +160,35 @@ const allPortfolio = [
       },
       en: {
         description: 'After making my React portfolio, I wanted to focus on Angular so I made this application to see the development difference between React and Angular. Work in progress.',
-        formation: 'School',
+        formation: 'Personnal',
         firstTitleModal: 'Project overview',
         firstDescription: 'The objective of the application is to be able to communicate between several users, just enter a name and chat, the server is hosted on Heroku. Work in progress.',
+        clickLink: 'Click here to view this app',
+        clickGit: 'Click here to view this project on GitHub'
+      }
+    }
+  },
+  {
+    id: 7,
+    title: 'Database filter',
+    category: 'personal',
+    img: 'assets/database.png',
+    url: 'https://database-filter.netlify.app/',
+    tools: 'Javascript',
+    gitHub: 'https://github.com/Rangeraluffy/Filter-Database',
+    languages: {
+      fr: {
+        description: "Il s'agit d'un projet personnel, la cible est un projet dynamique en javascript. J'ai fait le html et le css mais le but était en javascript. Si vous voulez trouver un nom, ou un nom de famille, vous pouvez le mettre en ordre.",
+        firstTitleModal: 'Aperçu du projet',
+        firstDescription: "J'utilise AJAX pour appeler l'API Random User Generator et je recevrai un utilisateur généré aléatoirement en retour, j'ai fait le html et le css , mais la cible principale de ce projet était le javascript",
+        clickLink: "Cliquez ici pour visualiser cette application",
+        clickGit: "Cliquez ici pour visualiser ce projet sur Github"
+      },
+      en: {
+        description: 'This a personal project , the target is a project dynamic in javascript. I made the html and css but the goal was in javascript. If you want to found a name , or last name you put into order.',
+        formation: 'Personnal',
+        firstTitleModal: 'Project overview',
+        firstDescription: 'I use AJAX to call the Random User Generator API and will receive a randomly generated user in return, i did the html and css , but the main target of this project was the javascript',
         clickLink: 'Click here to view this app',
         clickGit: 'Click here to view this project on GitHub'
       }
