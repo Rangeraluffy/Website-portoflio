@@ -10,7 +10,7 @@ import {
   faReact,
   faNode,
   faWordpress,
-  faGitlab
+  faAngular
 } from '@fortawesome/free-brands-svg-icons';
 import {faStar as faStarRegular, faGem} from '@fortawesome/free-regular-svg-icons';
 import {faStar, faStarHalfAlt} from '@fortawesome/free-solid-svg-icons';
@@ -133,10 +133,10 @@ export default function Works() {
               </div>
             </div>
             <div className="box">
-              <span className="tooltip">GitLab</span>
+              <span className="tooltip">Angular</span>
               <div className="box-face">
                 <div className="box-text">
-                  <FontAwesomeIcon icon={faGitlab}></FontAwesomeIcon>
+                  <FontAwesomeIcon icon={faAngular}></FontAwesomeIcon>
                 </div>
               </div>
               <div className="box-back">

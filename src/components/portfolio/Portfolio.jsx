@@ -77,7 +77,7 @@ export default function Portfolio() {
               </p>
               <a href={portfolioModalState.data.gitHub} target="_blank" rel="noopener noreferrer">{portfolioModalState.data.languages[i18n.language].clickGit}</a>
             </div>
-            <h1>{portfolioModalState.data.languages[i18n.language].firstTitleModal}</h1>
+            <h2 className="description_modal">{portfolioModalState.data.languages[i18n.language].firstTitleModal}</h2>
             <p className="modal_text">
               {portfolioModalState.data.languages[i18n.language].firstDescription}
             </p>
