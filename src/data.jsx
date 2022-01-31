@@ -25,24 +25,24 @@ const allPortfolio = [
     }
   }, {
     id: 2,
-    title: 'Covid Web Site',
+    title: 'Aveneg | E-commerce',
     category: 'personal',
-    img: 'assets/covid_website.png',
-    tools: 'HTML & CSS',
-    url: 'https://covid-website-eight.vercel.app/',
-    gitHub: 'https://github.com/Rangeraluffy/COVID-Website',
+    img: 'assets/aveneg.png',
+    tools: 'React - Node JS',
+    url: 'https://alexandre-marolleau.netlify.app/',
+    gitHub: 'https://github.com/Rangeraluffy/Aveneg',
     languages: {
       fr: {
-        description: "Il s'agit d'un projet personnel réalisé le soir sur mon temps libre pour améliorer mes compétences en CSS pur.",
+        description: "Il s'agit d'un projet personnel, des amis ont créé une nouvelle marque avec quelques modèles. Donc, pour améliorer de mes compétences React, c'était pour moi un gros défi de faire ça tout seul. Je n'ai jamais fait d'application e-commerce et c'était l'occasion de le faire. Vous pouvez voir mon github ci-dessous.",
         firstTitleModal: 'Aperçu du projet',
-        firstDescription: 'Le HTML et les images étaient fournis dans le code, le principe étant de faire simplement tout le site en CSS sans toucher au HTML.',
+        firstDescription: "Dans ce projet j'utilise : Express Js, Mongoose, Node JS, CryptoJS, JsonWebToken, Stripe, React-Router, Axios, Redux JS, E commerce REST API.",
         clickLink: "Cliquez ici pour visualiser cette application",
         clickGit: "Cliquez ici pour visualiser ce projet sur Github"
       },
       en: {
-        description: 'This is a personal project carried out in the evening on my free time to improve my CSS skills.',
+        description: 'This is a personal project , some friends have create a new mark with some models. So for my improved of my skills and improve with React. It was for me a big challenge to do that alone. I never did a e-commerce application and it was for me the chance to do that. You can see my github below.',
         firstTitleModal: 'Project overview',
-        firstDescription: 'The HTML and images were already present in the code, the principale was to shape the whole website in CSS.',
+        firstDescription: 'In this project I used : Express Js, Mongoose, Node JS, CryptoJS, JsonWebToken, Stripe, React-Router, Axios, Redux JS, E commerce REST API.',
         clickLink: 'Click here to view this app',
         clickGit: 'Click here to view this project on GitHub'
       }
@@ -193,7 +193,32 @@ const allPortfolio = [
         clickGit: 'Click here to view this project on GitHub'
       }
     }
-  }
+  },
+  {
+   id: 8,
+   title: 'Covid Web Site',
+   category: 'personal',
+   img: 'assets/covid_website.png',
+   tools: 'HTML & CSS',
+   url: 'https://covid-website-eight.vercel.app/',
+   gitHub: 'https://github.com/Rangeraluffy/COVID-Website',
+   languages: {
+     fr: {
+       description: "Il s'agit d'un projet personnel réalisé le soir sur mon temps libre pour améliorer mes compétences en CSS pur.",
+       firstTitleModal: 'Aperçu du projet',
+       firstDescription: 'Le HTML et les images étaient fournis dans le code, le principe étant de faire simplement tout le site en CSS sans toucher au HTML.',
+       clickLink: "Cliquez ici pour visualiser cette application",
+       clickGit: "Cliquez ici pour visualiser ce projet sur Github"
+     },
+     en: {
+       description: 'This is a personal project carried out in the evening on my free time to improve my CSS skills.',
+       firstTitleModal: 'Project overview',
+       firstDescription: 'The HTML and images were already present in the code, the principale was to shape the whole website in CSS.',
+       clickLink: 'Click here to view this app',
+       clickGit: 'Click here to view this project on GitHub'
+     }
+   }
+ }
 ];
 
 export default allPortfolio;

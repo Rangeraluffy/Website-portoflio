@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import Topbar from './components/topbar/Topbar';
 import Intro from './components/intro/Intro';
 import About from './components/about/About';
-import Teams from './components/teams/Teams';
 import Portfolio from './components/portfolio/Portfolio';
 import Works from './components/works/Works';
 import Contact from './components/contact/Contact';
@@ -18,7 +17,6 @@ function App() {
       <Intro/>
       <About/>
       <Portfolio/>
-      <Teams/>
       <Works/>
       <Contact/>
     </div>
