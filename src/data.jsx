@@ -143,7 +143,7 @@ const allPortfolio = [
     }
   },
   {
-    id: 6,
+    id: 7,
     title: 'Chat Application',
     category: 'personal',
     img: 'assets/chat_app.png',
@@ -169,7 +169,7 @@ const allPortfolio = [
     }
   },
   {
-    id: 7,
+    id: 8,
     title: 'Database filter',
     category: 'personal',
     img: 'assets/database.png',
@@ -195,7 +195,7 @@ const allPortfolio = [
     }
   },
   {
-   id: 8,
+   id: 9,
    title: 'Covid Web Site',
    category: 'personal',
    img: 'assets/covid_website.png',
