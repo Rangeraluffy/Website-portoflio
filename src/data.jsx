@@ -33,7 +33,7 @@ const allPortfolio = [
     gitHub: 'https://github.com/Rangeraluffy/Aveneg',
     languages: {
       fr: {
-        description: "Il s'agit d'un projet personnel, des amis ont créé une nouvelle marque avec quelques modèles. Donc, pour améliorer de mes compétences React, c'était pour moi un gros défi de faire ça tout seul. Je n'ai jamais fait d'application e-commerce et c'était l'occasion de le faire. Vous pouvez voir mon github ci-dessous.",
+        description: "Il s'agit ici d'un projet personnel. Des amis ont créé une marque de vêtements avec quelques modèles de tshirts, vestes... Afin d’améliorer mes compétences en développement React, j’ai décidé de construire leur site de e-commerce. C’est un gros défi que je me suis lancé en autodidacte, et l’occasion de développer mon tout premier site de e-commerce. Retrouvez mon github ci-dessous. ",
         firstTitleModal: 'Aperçu du projet',
         firstDescription: "Dans ce projet j'utilise : Express Js, Mongoose, Node JS, CryptoJS, JsonWebToken, Stripe, React-Router, Axios, Redux JS, E commerce REST API.",
         clickLink: "Cliquez ici pour visualiser cette application",
