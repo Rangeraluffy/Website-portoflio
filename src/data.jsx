@@ -218,7 +218,33 @@ const allPortfolio = [
        clickGit: 'Click here to view this project on GitHub'
      }
    }
- }
+ },
+ {
+  id: 10,
+  title: 'To Do Application',
+  category: 'personal',
+  img: 'assets/todo.png',
+  url: 'https://todoapp-alexandre.netlify.app/',
+  tools: 'React',
+  gitHub: 'https://github.com/Rangeraluffy/To-do-list',
+  languages: {
+    fr: {
+      description: "Application pour mes tâches de la journée.",
+      firstTitleModal: 'Aperçu du projet',
+      firstDescription: "Il s'agit d'un projet personnel, j'ai longuement cherché des applications en ligne pour réaliser mes tâches de la journée mais aucune me correspondais, j'ai donc décidé de créer la mienne que j'utilise.",
+      clickLink: "Cliquez ici pour visualiser cette application",
+      clickGit: "Cliquez ici pour visualiser ce projet sur Github"
+    },
+    en: {
+      description: 'Application for my daily tasks.',
+      formation: 'Personnal',
+      firstTitleModal: 'Project overview',
+      firstDescription: 'This is a personal project, I searched for a long time online for applications to carry out my tasks for the day but none suited me, so I decided to create my own which I use.',
+      clickLink: 'Click here to view this app',
+      clickGit: 'Click here to view this project on GitHub'
+    }
+  }
+},
 ];
 
 export default allPortfolio;
